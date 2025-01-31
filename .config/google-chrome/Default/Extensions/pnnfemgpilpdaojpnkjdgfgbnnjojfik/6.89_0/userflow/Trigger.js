@@ -1,0 +1,1 @@
+import{r as t}from"./vendor.react.js";import{e as r,u as e,h as o}from"./bubble-frame.styl.js";import{u as s}from"./client-context.js";const n=({trigger:n})=>{const a=s(),c=r(),u=t.useRef(!1),i=e(n.condition);return t.useLayoutEffect((()=>{i&&!u.current&&(u.current=!0,o(a,c,n.actions))}),[i,u,a,c,n.actions]),null};export{n as T};

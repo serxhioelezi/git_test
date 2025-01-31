@@ -1,0 +1,36 @@
+.streak-mod__RHb6lsY1zMCooa5lzAAj {
+	border: none;
+	cursor: pointer;
+
+	border-radius: 4px;
+	padding-inline: 0;
+}
+.streak-mod__RHb6lsY1zMCooa5lzAAj:hover,
+	.streak-mod__RHb6lsY1zMCooa5lzAAj:focus-visible {
+		background-color: var(--streak-black-surface);
+	}
+.streak-mod__RHb6lsY1zMCooa5lzAAj[aria-disabled='true'] {
+		cursor: not-allowed;
+		color: var(--streak-black-disabled);
+	}
+.streak-mod__RHb6lsY1zMCooa5lzAAj[aria-disabled='true']:hover {
+			background-color: transparent;
+		}
+.streak-mod__RHb6lsY1zMCooa5lzAAj.streak-mod__J95ONGPrcrkB1gKneXMt {
+		color: var(--streak-primary);
+		background-color: var(--streak-primary-hover);
+	}
+.streak-mod__RHb6lsY1zMCooa5lzAAj.streak-mod__J95ONGPrcrkB1gKneXMt:hover {
+			background-color: var(--streak-primary-hover);
+		}
+
+/* Algolia highlights matches with `em`. Using `em` across the board
+ * to make HighlightText more reusable across search types.
+ */
+.streak-mod__rRMoWU4wwV1TI2G8QYFV em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/862.ef84db60c0eef7d0d60e.css.map*/

@@ -1,0 +1,47 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "Streak - CRM for Gmail"
+   },
+   "background": {
+      "service_worker": "background-mv3.js"
+   },
+   "content_scripts": [ {
+      "js": [ "app-common-gmail-main-world.js" ],
+      "matches": [ "https://mail.google.com/*" ],
+      "run_at": "document_start",
+      "world": "MAIN"
+   }, {
+      "js": [ "app-mv3.js" ],
+      "matches": [ "*://*.google.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "app-mv3.js" ],
+      "matches": [ "*://*.google.com/*marketplace/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://www.streak.com",
+   "host_permissions": [ "*://mail.google.com/", "*://mailfoogae.appspot.com/", "*://*.mailfoogae.appspot.com/", "*://*.googleusercontent.com/", "*://*.google.com/", "*://*.streak.com/" ],
+   "icons": {
+      "128": "webstoreIcon128.png",
+      "16": "webstoreIcon16.png",
+      "48": "webstoreIcon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCdn9sLLDOQgAy83T6BeNS0UQrpja9oz9CgHRtrpCJjKO8tYm0IZIiB/PQhzxZgWXP9/LDEJOSRhIuJmAs4dyg1wHt07XG5f7hnj28VpCfCkW1kIZHlL5HS6iEzn2A7+IhDWLbE8yQHEoTNkR/BbgHNupSlAVBJjSYYxjo1vzapZQIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "100.0",
+   "name": "__MSG_appName__",
+   "permissions": [ "storage", "scripting", "declarativeNetRequestWithHostAccess", "management" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.89",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "blank.png", "blank.html", "iframe.js", "orangeIcon.png", "exclamation.png" ]
+   }, {
+      "matches": [ "https://*.google.com/*", "https://*.streak.com/*" ],
+      "resources": [ "clientjs/*", "userflow/*" ]
+   } ]
+}

@@ -1,0 +1,6 @@
+2025/01/31-09:52:19.609 abd Reusing MANIFEST /home/serxhio/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2025/01/31-09:52:19.665 abd Recovering log #4
+2025/01/31-09:52:19.678 abd Reusing old log /home/serxhio/.config/google-chrome/Default/Sync Data/LevelDB/000004.log 
+2025/01/31-10:22:36.602 abf Level-0 table #8: started
+2025/01/31-10:22:36.617 abf Level-0 table #8: 109545 bytes OK
+2025/01/31-10:22:36.622 abf Delete type=0 #4

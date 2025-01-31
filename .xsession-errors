@@ -1,0 +1,181 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/serxhio/.Xauthority
+/etc/X11/Xsession.d/30x11-common_xresources: line 16: has_option: command not found
+/etc/X11/Xsession.d/75dbus_dbus-launch: line 9: has_option: command not found
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+/etc/X11/Xsession.d/90x11-common_ssh-agent: line 9: has_option: command not found
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting CLUTTER_BACKEND=x11
+dbus-update-activation-environment: setting LANGUAGE=en_US:
+dbus-update-activation-environment: setting LC_ADDRESS=de_DE.UTF-8
+dbus-update-activation-environment: setting LC_NAME=de_DE.UTF-8
+dbus-update-activation-environment: setting DESKTOP_SESSION=xubuntu
+dbus-update-activation-environment: setting LC_MONETARY=de_DE.UTF-8
+dbus-update-activation-environment: setting PWD=/home/serxhio
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=xubuntu
+dbus-update-activation-environment: setting LOGNAME=serxhio
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=gtk2
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting XAUTHORITY=/home/serxhio/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/serxhio
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting HOME=/home/serxhio
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting LANG=en_US
+dbus-update-activation-environment: setting LC_PAPER=de_DE.UTF-8
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=XFCE
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting LC_IDENTIFICATION=de_DE.UTF-8
+dbus-update-activation-environment: setting GTK_OVERLAY_SCROLLING=0
+dbus-update-activation-environment: setting USER=serxhio
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting SHLVL=1
+dbus-update-activation-environment: setting LC_TELEPHONE=de_DE.UTF-8
+dbus-update-activation-environment: setting LC_MEASUREMENT=de_DE.UTF-8
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting LC_TIME=de_DE.UTF-8
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+dbus-update-activation-environment: setting GDMSESSION=xubuntu
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting LC_NUMERIC=de_DE.UTF-8
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+
+(xfwm4:2422): xfwm4-WARNING **: 09:50:52.443: Unsupported GL renderer (llvmpipe (LLVM 15.0.7, 256 bits)).
+
+(wrapper-2.0:2460): GLib-GIO-CRITICAL **: 09:50:53.591: g_file_new_for_path: assertion 'path != NULL' failed
+
+(wrapper-2.0:2460): GLib-GIO-CRITICAL **: 09:50:53.592: g_file_monitor_file: assertion 'G_IS_FILE (file)' failed
+
+(wrapper-2.0:2460): GLib-GObject-WARNING **: 09:50:53.593: invalid (NULL) pointer instance
+
+(wrapper-2.0:2460): GLib-GObject-CRITICAL **: 09:50:53.593: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(wrapper-2.0:2460): Gtk-WARNING **: 09:50:53.593: Attempting to add a widget with type GtkToggleButton to a container of type XfcePanelPlugin, but the widget is already inside a container of type XfcePanelPlugin, please remove the widget from its existing container first.
+
+** (wrapper-2.0:2462): WARNING **: 09:50:53.595: No outputs have backlight property
+
+(wrapper-2.0:2458): Gtk-WARNING **: 09:50:53.639: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(wrapper-2.0:2460): Gtk-WARNING **: 09:50:53.671: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(wrapper-2.0:2462): Gtk-CRITICAL **: 09:50:53.736: gtk_icon_theme_has_icon: assertion 'icon_name != NULL' failed
+
+(wrapper-2.0:2462): Gtk-CRITICAL **: 09:50:53.737: gtk_icon_theme_has_icon: assertion 'icon_name != NULL' failed
+
+(wrapper-2.0:2465): Gtk-WARNING **: 09:50:53.749: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PulseaudioButton)
+
+(wrapper-2.0:2462): Gtk-CRITICAL **: 09:50:53.755: gtk_icon_theme_has_icon: assertion 'icon_name != NULL' failed
+
+(wrapper-2.0:2462): Gtk-CRITICAL **: 09:50:53.757: gtk_icon_theme_has_icon: assertion 'icon_name != NULL' failed
+
+(wrapper-2.0:2462): Gtk-WARNING **: 09:50:53.856: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PowerManagerButton)
+
+** (xiccd:2508): WARNING **: 09:50:54.127: EDID is empty
+vmware-user: could not open /proc/fs/vmblock/dev
+
+(polkit-gnome-authentication-agent-1:2539): GLib-CRITICAL **: 09:50:54.305: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-gnome-authentication-agent-1:2539): polkit-gnome-1-WARNING **: 09:50:54.308: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+(process:2601): ayatana-indicator-application-service-WARNING **: 09:50:54.332: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+
+** (xfce4-power-manager:2583): WARNING **: 09:50:54.433: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
+
+
+** (xfce4-power-manager:2583): WARNING **: 09:50:54.435: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
+
+
+(xfce4-power-manager:2583): GLib-GObject-WARNING **: 09:50:54.514: ../../../gobject/gsignal.c:2613: signal 'Changed' is invalid for instance '0x6112423e2920' of type 'GDBusProxy'
+
+(xfce4-power-manager:2583): xfce4-power-manager-WARNING **: 09:50:54.556: could not map keysym 1008ffa8 to keycode
+
+
+** (xfce4-power-manager:2583): WARNING **: 09:50:54.565: No outputs have backlight property
+
+(xfce4-power-manager:2583): xfce4-power-manager-WARNING **: 09:50:54.575: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Object does not exist at path ?/org/freedesktop/UPower/KbdBacklight?
+
+** (xfce4-screensaver:2529): WARNING **: 09:50:54.619: screensaver already running in this session
+blueman-applet 09.50.55 WARNING  PluginManager:147 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 09.50.55 WARNING  PluginManager:147 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+blueman-applet 09.51.09 WARNING  DiscvManager:119 update_menuitems: warning: Adapter is None
+
+(xfdesktop:2455): GLib-CRITICAL **: 09:52:03.138: g_variant_new_string: assertion 'string != NULL' failed
+Working directory "/home/serxhio/[Invalid UTF-8]" does not exist. It won't be used when spawning "/usr/bin/google-chrome-stable".libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[2727:2754:0131/095225.342511:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Created TensorFlow Lite XNNPACK delegate for CPU.
+Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+[2978:4:0131/095234.227074:ERROR:unzipper_impl.cc(51)] Cannot create file to extract (redacted): FILE_ERROR_EXISTS
+[2978:4:0131/095234.227407:ERROR:zip.cc(236)] Cannot extract file (redacted) from ZIP
+[2792:2799:0131/095237.379806:ERROR:ssl_client_socket_impl.cc(876)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2727:2754:0131/095251.189049:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[2727:2754:0131/095341.642589:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[2727:2754:0131/095518.139110:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+Warning: remove_all_non_valid_override_layers: Failed to get executable path and name
+Warning: loader_get_json: Failed to open JSON file lvp_icd.x86_64.json
+Warning: loader_get_json: Failed to open JSON file intel_hasvk_icd.x86_64.json
+Warning: /usr/lib/x86_64-linux-gnu/libvulkan_radeon.so: cannot open shared object file: Permission denied
+Warning: loader_get_json: Failed to open JSON file virtio_icd.x86_64.json
+Warning: /usr/lib/x86_64-linux-gnu/libvulkan_intel.so: cannot open shared object file: Permission denied
+Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+    at CheckVkSuccessImpl (../../third_party/dawn/src/dawn/native/vulkan/VulkanError.cpp:106)
+
+Warning: Couldn't load Vulkan. Searched libvk_swiftshader.so.
+    at operator() (../../third_party/dawn/src/dawn/native/vulkan/BackendVk.cpp:366)
+
+[3154:3154:0131/095519.756489:ERROR:gpu_blocklist.cc(71)] Unable to get gpu adapter
+[2727:2727:0131/095519.758230:ERROR:service_client.cc(36)] Unexpected on_device_model service disconnect: The device's GPU is not supported.
+[2727:2754:0131/095908.015876:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[2727:2754:0131/100649.022928:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[3606:14:0131/102019.658386:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+/var/lib/dpkg/lock: 
+[2770:2770:0131/102229.421526:ERROR:gles2_cmd_decoder_passthrough.cc(957)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[2770:2770:0131/102229.447378:ERROR:gles2_cmd_decoder_passthrough.cc(957)] ContextResult::kFatalFailure: fail_if_major_perf_caveat + swiftshader
+[2770:2770:0131/102229.457648:ERROR:gles2_cmd_decoder_passthrough.cc(1082)] [GroupMarkerNotSet(crbug.com/242999)!:A0702D0004220000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[2770:2770:0131/102235.189863:ERROR:gles2_cmd_decoder_passthrough.cc(1082)] [GroupMarkerNotSet(crbug.com/242999)!:A0702D0004220000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[2727:2727:0131/102359.298981:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+/var/lib/dpkg/lock: 
+/var/cache/apt/archives/lock:
+[2727:2727:0131/103828.743025:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
+[2770:2770:0131/103831.374618:ERROR:gles2_cmd_decoder_passthrough.cc(1082)] [GroupMarkerNotSet(crbug.com/242999)!:A0D02D0004220000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[2770:2825:0131/104658.874981:ERROR:shared_image_manager.cc(357)] SharedImageManager::ProduceMemory: Trying to Produce a Memory representation from a non-existent mailbox.
+[2770:2770:0131/105340.353463:ERROR:gles2_cmd_decoder_passthrough.cc(1082)] [GroupMarkerNotSet(crbug.com/242999)!:A040A60004220000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:54:56.824: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:55:14.458: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:55:26.136: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:56:04.789: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:59:15.189: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:59:35.852: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 10:59:46.118: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 11:02:44.111: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 11:03:10.172: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 11:05:17.718: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfce4-terminal:3374): libxfce4ui-CRITICAL **: 11:08:07.415: xfce_titled_dialog_update_icon: assertion 'icon_name != NULL' failed
+
+(xfdesktop:2455): GLib-GObject-CRITICAL **: 11:22:57.275: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+** (xfdesktop:2455): WARNING **: 11:22:57.275: Attempt to remove icon 0x5dce34445dd0 from XfdesktopIconView 0x5dce345ca270, but it's not in there.
+
+** (xfdesktop:2455): WARNING **: 11:22:57.275: Attempt to remove icon 0x5dce34445eb0 from XfdesktopIconView 0x5dce345ca270, but it's not in there.
+
+** (xfdesktop:2455): CRITICAL **: 11:22:57.290: xfdesktop_icon_view_add_item: assertion '!g_object_get_data(G_OBJECT(icon), "--xfdesktop-icon-view")' failed
+
+** (xfdesktop:2455): CRITICAL **: 11:22:57.290: xfdesktop_icon_view_add_item: assertion '!g_object_get_data(G_OBJECT(icon), "--xfdesktop-icon-view")' failed

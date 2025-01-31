@@ -1,0 +1,186 @@
+.streak-mod__rnDmFnvBODmTBi1uC444 {
+	margin: 0 var(--spacingS);
+	font-size: var(--streak-text-size-14);
+	height: 20px;
+	line-height: 20px;
+	color: var(--streak-black-secondary);
+}
+
+.streak-mod__fTkHBUL4oJygafS5btwY {
+	font-weight: 700;
+}
+
+.streak-mod__vAJPHb_EywoxF87AblCR {
+	font-weight: 400;
+}
+
+.streak-mod__B1fAecmLGdGt8ljknrn1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.streak-mod___czN6TCqjTJzhJEwNRFy {
+	margin: -4px 0 -4px 0;
+}
+
+.streak-mod__MG6DaS5p4hxHEzmE0jGA {
+	overflow: hidden;
+}
+
+.streak-mod__MG6DaS5p4hxHEzmE0jGA:not(:last-child) {
+		/* Using row-gap here would trigger judder at the end of removal animation. */
+		margin-bottom: var(--spacingXXS);
+	}
+
+.streak-mod__dUxKHo0qp6_7xuDNkf9u {
+	text-decoration: line-through !important;
+}
+
+.streak-mod__stMrHrm_FWcNOE7G4JVB {
+	cursor: pointer;
+}
+
+.streak-mod__HBbGWSF7dBJW2KDDpQVy {
+	height: 24px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 8px;
+	overflow: hidden;
+}
+
+
+	.streak-mod__M6ePuCk87DXz3eSL2mI5 .streak__timeline_item .streak__timeline_item_iconWrapper {
+		/* Override timeline items margin-top */
+		margin-top: 4px !important;
+	}
+
+
+	.streak-mod__HOhsZF0qcLO3tWVg7Rv5 p {
+		min-height: 1.5em;
+
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+.streak-mod__HOhsZF0qcLO3tWVg7Rv5 p:last-child {
+			margin-bottom: 0;
+		}
+
+.streak-mod__tkDzaG7m9Cu8HFVQLGbR {
+	margin: 0;
+}
+
+.streak-mod__EnNAfsjnUWdw3NPiEkTC .ProseMirror {
+	outline: none;
+}
+
+.streak-mod__EnNAfsjnUWdw3NPiEkTC .ProseMirror li p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+.streak-mod__EnNAfsjnUWdw3NPiEkTC .ProseMirror .ProseMirror-gapcursor::after {
+	top: 0;
+}
+
+.streak-mod__EnNAfsjnUWdw3NPiEkTC .ProseMirror p.is-editor-empty:first-child::before {
+	color: var(--streak-black-secondary);
+	content: attr(data-placeholder);
+	float: left;
+	height: 0;
+	pointer-events: none;
+}
+
+.streak-mod__fkxbrqlBt08SQXszEYQF {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow-wrap: break-word;
+	-webkit-hyphens: auto;
+	        hyphens: auto;
+
+	white-space: normal;
+}
+
+.streak-mod__fkxbrqlBt08SQXszEYQF * {
+		display: inline;
+	}
+
+.streak-mod__fkxbrqlBt08SQXszEYQF br,
+	.streak-mod__fkxbrqlBt08SQXszEYQF br::before,
+	.streak-mod__fkxbrqlBt08SQXszEYQF div::before,
+	.streak-mod__fkxbrqlBt08SQXszEYQF p::before,
+	.streak-mod__fkxbrqlBt08SQXszEYQF div::after,
+	.streak-mod__fkxbrqlBt08SQXszEYQF p::after,
+	.streak-mod__fkxbrqlBt08SQXszEYQF ol::before,
+	.streak-mod__fkxbrqlBt08SQXszEYQF ol::after,
+	.streak-mod__fkxbrqlBt08SQXszEYQF ul::before,
+	.streak-mod__fkxbrqlBt08SQXszEYQF ul::after,
+	.streak-mod__fkxbrqlBt08SQXszEYQF li::before,
+	.streak-mod__fkxbrqlBt08SQXszEYQF li::after {
+		content: ' ';
+	}
+
+.streak-mod__fkxbrqlBt08SQXszEYQF ul,
+	.streak-mod__fkxbrqlBt08SQXszEYQF ol {
+		margin: 0;
+		padding: 0;
+	}
+
+.streak-mod__fhZnClt0CuwE1QbRuIoh {
+	overflow: hidden;
+	overflow-wrap: break-word;
+	-webkit-hyphens: auto;
+	        hyphens: auto;
+	white-space: normal;
+}
+
+.streak-mod__fhZnClt0CuwE1QbRuIoh * {
+		display: inline;
+	}
+
+.streak-mod__fhZnClt0CuwE1QbRuIoh br,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh br::before,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh div::before,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh p::before,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh div::after,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh p::after,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh ol::before,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh ol::after,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh ul::before,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh ul::after,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh li::before,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh li::after {
+		content: ' ';
+	}
+
+.streak-mod__fhZnClt0CuwE1QbRuIoh ul,
+	.streak-mod__fhZnClt0CuwE1QbRuIoh ol {
+		margin: 0;
+		padding: 0;
+	}
+
+.streak-mod__D_D3LW6Wxhx72YbuORNe {
+	display: flex;
+	flex-shrink: 0;
+	padding: 7px 15px 0px 10px;
+	margin-top: 10px;
+	position: relative;
+}
+.streak-mod__D_D3LW6Wxhx72YbuORNe::before {
+		content: ' ';
+		display: block;
+		background-color: var(--streak-borders-color);
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		height: 2px;
+	}
+.streak-mod__D_D3LW6Wxhx72YbuORNe > .mdl-tabs__tab-bar > .mdl-tabs__tab:last-child {
+		float: right;
+		padding: 0;
+	}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/9046.dbc516490d1dc6835f96.css.map*/

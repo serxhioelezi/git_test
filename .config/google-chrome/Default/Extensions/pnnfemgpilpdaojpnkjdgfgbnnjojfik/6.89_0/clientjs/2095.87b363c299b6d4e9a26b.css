@@ -1,0 +1,36 @@
+/* There is also css relevant to membersSection in the legacy teams.css file */
+
+.streak-mod__kJj4o7Y3NEcf4FxS4DaA {
+	font-size: var(--streak-text-size-12);
+	color: var(--streak-black-primary);
+}
+
+.streak-mod__iP8eD28aUXwAEG86QkQ9 {
+	display: flex;
+	flex-direction: column;
+}
+
+.streak-mod__iP8eD28aUXwAEG86QkQ9 span {
+	margin-bottom: 6px;
+}
+
+.streak-mod__TsX2v4eBdCpxUIblFMi8 {
+	display: flex;
+}
+
+.streak-mod__TsX2v4eBdCpxUIblFMi8 .streak-mod__UcY9aHN9syclMIL_l_kW {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.streak-mod__TsX2v4eBdCpxUIblFMi8 .streak-mod__UcY9aHN9syclMIL_l_kW span {
+	margin-bottom: 6px;
+}
+
+.streak-mod__TsX2v4eBdCpxUIblFMi8 .streak-mod__VpJzSnrO0Hq2sFxb8UHw {
+	margin-bottom: 4px;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/2095.87b363c299b6d4e9a26b.css.map*/

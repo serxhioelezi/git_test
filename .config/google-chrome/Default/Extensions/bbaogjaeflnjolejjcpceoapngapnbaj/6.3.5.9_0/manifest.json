@@ -1,0 +1,55 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/icons/icon128.png",
+         "16": "images/icons/icon16.png",
+         "19": "images/icons/icon19.png",
+         "38": "images/icons/icon38.png",
+         "48": "images/icons/icon48.png"
+      },
+      "default_popup": "index.html"
+   },
+   "author": {
+      "email": "developer1@fireapps.vn"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "assets/main.tsx-loader-DqFkAyFp.js" ],
+      "matches": [ "https://*.aliexpress.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "assets/main.tsx-loader-xjuqYRXq.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Easily import high-quality product reviews from AliExpress and Amazon with AI.",
+   "externally_connectable": {
+      "matches": [ "https://*.fireapps.io/*", "https://*.alihunter.io/*", "https://*.alireviews.io/*", "https://*.alireviews.dev/*", "https://*.onecommerce.io/*", "https://admin.shopify.com/*", "https://*.myshopify.com/admin/*", "https://aliorders.io/*", "https://*.kudosi.ai/*", "https://*.kudosi.dev/*" ]
+   },
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "images/icons/icon128.png",
+      "19": "images/icons/icon19.png",
+      "38": "images/icons/icon38.png",
+      "48": "images/icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx35T1JCMb32tWDytL3x+y+Cn+xkFy0edjZQLHRMDMnNSsi54zBLhzryZbqbB9XWHsgvUUdkMYQOKPkeamk/PgyRg0qkMo9xigdnMVjuZxNa8tQEyxrxSCZaSgG68gwTPIOZNh7/3QK5N/RgVjI2isTzMjhfmp7hJwRS3LNWu1rNGg03XGwDliBt00Kt4sijYLRZhSAAlTYx6yHOQnVZWf1RJM4V5ytnJCcmpIYfS3IQoL58Rwm5WlezvlXKASRr6oXpJY/F83MEVlF/RYQw3u1FcWWwYSNpUWdLOXpyzNkZCPkFDRBh409ARAbNbIxcHe2r3XLmu7KSTSjNHQ6mWpQIDAQAB",
+   "manifest_version": 3,
+   "name": "Kudosi (formerly Ali Reviews)",
+   "permissions": [ "storage", "webRequest", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.3.5.9",
+   "version_name": "6.3.5.9",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/tailwindcss.css", "assets/customScript.js", "assets/operationBanner.js", "assets/client-BwA1oZ62.js", "assets/bulk-import-products-bJAU--BW.js", "assets/link-Chb72h85.js", "assets/affiliate-BzdVKAoA.js", "assets/index-C1oEeiz3.js", "assets/_commonjsHelpers-lGe4XDVY.js", "assets/main.tsx-C1KWyDhM.js" ],
+      "use_dynamic_url": false
+   }, {
+      "matches": [ "https://*.aliexpress.com/*" ],
+      "resources": [ "assets/client-BwA1oZ62.js", "assets/affiliate-BzdVKAoA.js", "assets/affiliate-Ai0qc8g1.js", "assets/_commonjsHelpers-lGe4XDVY.js", "assets/main.tsx-DXO1rve_.js" ],
+      "use_dynamic_url": false
+   } ]
+}

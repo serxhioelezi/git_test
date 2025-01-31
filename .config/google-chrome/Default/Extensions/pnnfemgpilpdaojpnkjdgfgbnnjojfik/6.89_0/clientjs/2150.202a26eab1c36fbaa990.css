@@ -1,0 +1,47 @@
+.streak-mod__Gyo0Nt5xZx82f1KiEqvA {
+	background: var(--streak-solid-white);
+	border: 1px solid var(--streak-black-divider);
+	box-sizing: border-box;
+	border-radius: 4px;
+	transition: box-shadow 0.5s;
+	display: flex;
+	align-items: flex-start;
+	padding: 12px;
+}
+
+.streak-mod__Gyo0Nt5xZx82f1KiEqvA:hover {
+	box-shadow:
+		0px 2px 4px var(--streak-black-shadow),
+		0px 1px 10px var(--streak-black-divider),
+		0px 4px 5px var(--streak-black-divider);
+	border-color: transparent;
+	cursor: pointer;
+}
+
+.streak-mod__SsO7SGrOReH0BbaqsGJt {
+	margin-right: 12px;
+	display: flex;
+}
+
+.streak-mod__SsO7SGrOReH0BbaqsGJt img {
+	width: 24px;
+	height: 24px;
+}
+
+.streak-mod__SsO7SGrOReH0BbaqsGJt img:not(:last-child) {
+	margin-right: 8px;
+}
+
+.streak-mod__ywHJOdi77A5YJC5lmYOu {
+	margin-top: 8px;
+	display: flex;
+	gap: 5px;
+}
+
+.streak-mod__B6q5kPmfEevyh19oPpgI {
+	scale: 0.85;
+	height: 18px;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/2150.202a26eab1c36fbaa990.css.map*/

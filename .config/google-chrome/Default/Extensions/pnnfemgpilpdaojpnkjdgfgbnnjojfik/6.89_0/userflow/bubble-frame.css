@@ -1,0 +1,2473 @@
+.userflowjs-assistant-brain {
+  width: 14px;
+  height: 14px;
+  border-radius: 6px 6px 6px 1px;
+  background: var(--userflow-widget-background-color, #1a57e6);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  margin-left: 0.25rem;
+  transform-origin: bottom left;
+}
+.userflowjs-assistant-brain span {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  display: block;
+  background: var(--userflow-widget-foreground-color, #fff);
+  opacity: 0;
+  animation-name: userflowjs-assistant-brain-flash;
+  animation-iteration-count: infinite;
+}
+.userflowjs-assistant-brain span:nth-child(1) {
+  animation-duration: 1300ms;
+  animation-delay: -200ms;
+  top: 0;
+  left: 0;
+}
+.userflowjs-assistant-brain span:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation-duration: 1200ms;
+  animation-delay: -400ms;
+}
+.userflowjs-assistant-brain span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  animation-duration: 1100ms;
+  animation-delay: -600ms;
+}
+.userflowjs-assistant-brain span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  animation-duration: 1000ms;
+  animation-delay: -800ms;
+}
+.userflowjs-assistant-brain--enter {
+  animation: userflowjs-assistant-brain-enter 500ms cubic-bezier(0.2, 1.8, 0.2, 1) 250ms both;
+}
+.userflowjs-assistant-brain--exit {
+  animation: userflowjs-assistant-brain-exit 500ms cubic-bezier(0.5, -1, 0.2, 1) 250ms both;
+}
+@-moz-keyframes userflowjs-assistant-brain-flash {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes userflowjs-assistant-brain-flash {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes userflowjs-assistant-brain-flash {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes userflowjs-assistant-brain-flash {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes userflowjs-assistant-brain-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes userflowjs-assistant-brain-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes userflowjs-assistant-brain-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes userflowjs-assistant-brain-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes userflowjs-assistant-brain-exit {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes userflowjs-assistant-brain-exit {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-o-keyframes userflowjs-assistant-brain-exit {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes userflowjs-assistant-brain-exit {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+[dir="rtl"] .userflowjs-rtl-mirrored,
+[dir="rtl"] .userflowjs-resource-center-block-nav-icon {
+  transform: scaleX(-1);
+}
+[dir="ltr"] .userflowjs-text-align-end {
+  text-align: right;
+}
+[dir="rtl"] .userflowjs-text-align-end {
+  text-align: left;
+}
+.userflowjs-text-align-center {
+  text-align: center;
+}
+.userflowjs-text-align-justify {
+  text-align: justify;
+}
+.userflowjs-bubble-frame-root {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--userflow-main-background-color, #fff);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  padding: 24px;
+}
+.userflowjs-bubble-frame-root--appearance-modal {
+  padding: var(--userflow-modal-padding);
+  padding-top: var(--userflow-modal-padding-top);
+}
+.userflowjs-bubble-frame-root--appearance-bubble .userflowjs-bubble-buttons,
+.userflowjs-bubble-frame-root--appearance-tooltip .userflowjs-bubble-buttons {
+  justify-content: var(--userflow-buttons-bubble-justify-content);
+}
+.userflowjs-theme-root {
+  line-height: var(--userflow-line-height, 24px);
+  color: var(--userflow-main-foreground-color);
+  font-weight: var(--userflow-font-weight-normal);
+}
+.userflowjs-theme-root,
+.userflowjs-theme-root button,
+.userflowjs-theme-root input,
+.userflowjs-theme-root textarea {
+  font-family: var(--userflow-font-family);
+  font-size: var(--userflow-font-size, 16px);
+}
+.userflowjs-theme-root b,
+.userflowjs-theme-root strong {
+  font-weight: var(--userflow-font-weight-bold, 600);
+}
+.userflowjs-theme-root i,
+.userflowjs-theme-root em {
+  font-style: italic;
+}
+.userflowjs-theme-root a {
+  color: var(--userflow-link-color);
+  text-decoration: underline;
+}
+.userflowjs-theme-root a:hover {
+  color: var(--userflow-link-color);
+  text-decoration: none;
+}
+.userflowjs-theme-root h1 {
+  font-size: var(--userflow-h1-font-size);
+  font-weight: var(--userflow-font-weight-bold, 600);
+  line-height: 1.25em;
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-theme-root h2 {
+  font-size: var(--userflow-h2-font-size);
+  font-weight: var(--userflow-font-weight-bold, 600);
+  line-height: 1.25em;
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-theme-root small {
+  font-size: calc(var(--userflow-font-size) * 5 / 6);
+}
+.userflowjs-theme-root sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  font-size: smaller;
+  line-height: 0;
+}
+.userflowjs-theme-root p,
+.userflowjs-theme-root .p-like,
+.userflowjs-theme-root h1,
+.userflowjs-theme-root h2,
+.userflowjs-theme-root blockquote,
+.userflowjs-theme-root pre,
+.userflowjs-theme-root ol,
+.userflowjs-theme-root ul {
+  margin-top: 0;
+}
+.userflowjs-theme-root p:not(:last-child),
+.userflowjs-theme-root .p-like:not(:last-child),
+.userflowjs-theme-root h1:not(:last-child),
+.userflowjs-theme-root h2:not(:last-child),
+.userflowjs-theme-root blockquote:not(:last-child),
+.userflowjs-theme-root pre:not(:last-child),
+.userflowjs-theme-root ol:not(:last-child),
+.userflowjs-theme-root ul:not(:last-child),
+.userflowjs-theme-root .userflowjs-bubble-buttons:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.userflowjs-theme-root p,
+.userflowjs-theme-root h1,
+.userflowjs-theme-root h2,
+.userflowjs-theme-root blockquote,
+.userflowjs-theme-root pre,
+.userflowjs-theme-root ol,
+.userflowjs-theme-root ul {
+  min-height: var(--userflow-line-height, 24px);
+  flex-shrink: 0;
+}
+[dir="ltr"] .userflowjs-theme-root ul,[dir="ltr"] 
+.userflowjs-theme-root ol {
+  margin-left: 1.5rem;
+}
+[dir="rtl"] .userflowjs-theme-root ul,[dir="rtl"] 
+.userflowjs-theme-root ol {
+  margin-right: 1.5rem;
+}
+.userflowjs-theme-root ul li {
+  list-style-type: disc;
+}
+.userflowjs-theme-root ol li {
+  list-style-type: decimal;
+}
+[dir="ltr"] .userflowjs-theme-root blockquote {
+  border-left: 2px solid rgba(var(--userflow-main-foreground-color-rgb), 0.15);
+}
+[dir="rtl"] .userflowjs-theme-root blockquote {
+  border-right: 2px solid rgba(var(--userflow-main-foreground-color-rgb), 0.15);
+}
+.userflowjs-theme-root blockquote {
+  padding: 0.25rem 1rem;
+}
+.userflowjs-theme-root code {
+  padding: 0.125rem 0.25rem;
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  background-color: rgba(var(--userflow-main-foreground-color-rgb), 0.05);
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-theme-root pre > code {
+  display: block;
+  padding: 0.5rem;
+  overflow-x: auto;
+}
+.userflowjs-button-reset,
+.userflowjs-bubble-button-base,
+.userflowjs-bubble-toolbar-button,
+.userflowjs-bubble-button--primary,
+.userflowjs-bubble-button--default,
+.userflowjs-bubble-button--banner-primary,
+.userflowjs-bubble-button--banner-secondary,
+.userflowjs-tertiary-button,
+.userflowjs-bubble-section-button,
+.userflowjs-bubble-dismiss-button,
+.userflowjs-banner-close,
+.userflowjs-resource-center-launcher-button,
+.userflowjs-resource-center-preview-button,
+.userflowjs-assistant-chat__rating-option,
+.userflowjs-assistant-chat__feedback-submit,
+.userflowjs-assistant-chat-input__submit {
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+.userflowjs-button-reset:not(:disabled),
+.userflowjs-bubble-button-base:not(:disabled),
+.userflowjs-bubble-toolbar-button:not(:disabled),
+.userflowjs-bubble-button--primary:not(:disabled),
+.userflowjs-bubble-button--default:not(:disabled),
+.userflowjs-bubble-button--banner-primary:not(:disabled),
+.userflowjs-bubble-button--banner-secondary:not(:disabled),
+.userflowjs-tertiary-button:not(:disabled),
+.userflowjs-bubble-section-button:not(:disabled),
+.userflowjs-bubble-dismiss-button:not(:disabled),
+.userflowjs-banner-close:not(:disabled),
+.userflowjs-resource-center-launcher-button:not(:disabled),
+.userflowjs-resource-center-preview-button:not(:disabled),
+.userflowjs-assistant-chat__rating-option:not(:disabled),
+.userflowjs-assistant-chat__feedback-submit:not(:disabled),
+.userflowjs-assistant-chat-input__submit:not(:disabled) {
+  cursor: pointer;
+}
+.userflowjs-bubble-button-base,
+.userflowjs-bubble-toolbar-button,
+.userflowjs-bubble-button--primary,
+.userflowjs-bubble-button--default,
+.userflowjs-bubble-button--banner-primary,
+.userflowjs-bubble-button--banner-secondary,
+.userflowjs-tertiary-button,
+.userflowjs-bubble-section-button,
+.userflowjs-bubble-dismiss-button,
+.userflowjs-banner-close,
+.userflowjs-assistant-chat__rating-option,
+.userflowjs-assistant-chat__feedback-submit,
+.userflowjs-assistant-chat-input__submit {
+  display: inline-block;
+  padding: calc(0.25rem - 1px) var(--userflow-font-size);
+  transition: color 200ms cubic-bezier(0.25, 0.8, 0.5, 1), background-color 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+  border-radius: 0.375em;
+  font-size: var(--userflow-font-size);
+  font-weight: var(--userflow-font-weight-bold, 600);
+  height: 2rem;
+  line-height: 1.5rem;
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-button-base::-moz-focus-inner,
+.userflowjs-bubble-toolbar-button::-moz-focus-inner,
+.userflowjs-bubble-button--primary::-moz-focus-inner,
+.userflowjs-bubble-button--default::-moz-focus-inner,
+.userflowjs-bubble-button--banner-primary::-moz-focus-inner,
+.userflowjs-bubble-button--banner-secondary::-moz-focus-inner,
+.userflowjs-tertiary-button::-moz-focus-inner,
+.userflowjs-bubble-section-button::-moz-focus-inner,
+.userflowjs-bubble-dismiss-button::-moz-focus-inner,
+.userflowjs-banner-close::-moz-focus-inner,
+.userflowjs-assistant-chat__rating-option::-moz-focus-inner,
+.userflowjs-assistant-chat__feedback-submit::-moz-focus-inner,
+.userflowjs-assistant-chat-input__submit::-moz-focus-inner {
+  border: 0;
+}
+.userflowjs-bubble-button-base:focus-visible,
+.userflowjs-bubble-toolbar-button:focus-visible,
+.userflowjs-bubble-button--primary:focus-visible,
+.userflowjs-bubble-button--default:focus-visible,
+.userflowjs-bubble-button--banner-primary:focus-visible,
+.userflowjs-bubble-button--banner-secondary:focus-visible,
+.userflowjs-tertiary-button:focus-visible,
+.userflowjs-bubble-section-button:focus-visible,
+.userflowjs-bubble-dismiss-button:focus-visible,
+.userflowjs-banner-close:focus-visible,
+.userflowjs-assistant-chat__rating-option:focus-visible,
+.userflowjs-assistant-chat__feedback-submit:focus-visible,
+.userflowjs-assistant-chat-input__submit:focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-bubble-button-base > svg,
+.userflowjs-bubble-toolbar-button > svg,
+.userflowjs-bubble-button--primary > svg,
+.userflowjs-bubble-button--default > svg,
+.userflowjs-bubble-button--banner-primary > svg,
+.userflowjs-bubble-button--banner-secondary > svg,
+.userflowjs-tertiary-button > svg,
+.userflowjs-bubble-section-button > svg,
+.userflowjs-bubble-dismiss-button > svg,
+.userflowjs-banner-close > svg,
+.userflowjs-assistant-chat__rating-option > svg,
+.userflowjs-assistant-chat__feedback-submit > svg,
+.userflowjs-assistant-chat-input__submit > svg {
+  display: inline-block;
+  width: 16px;
+  height: 1em;
+}
+.userflowjs-bubble-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--userflow-progress-bar-height);
+  overflow: hidden;
+}
+.userflowjs-bubble-progress__fill {
+  width: 0%;
+  height: 100%;
+  background-color: var(--userflow-progress-bar-color);
+  transition: width 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+  border-radius: 1px;
+}
+[dir="ltr"] .userflowjs-bubble-toolbar {
+  right: 0.5rem;
+}
+[dir="rtl"] .userflowjs-bubble-toolbar {
+  left: 0.5rem;
+}
+.userflowjs-bubble-toolbar {
+  z-index: 100;
+  position: fixed;
+  top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 1.5rem;
+}
+[dir="ltr"] .userflowjs-bubble-draft {
+  margin-right: 0.5rem;
+}
+[dir="rtl"] .userflowjs-bubble-draft {
+  margin-left: 0.5rem;
+}
+.userflowjs-bubble-draft {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: calc(var(--userflow-font-size) * 0.625);
+  font-weight: 600;
+  height: var(--userflow-font-size);
+  line-height: var(--userflow-font-size);
+  padding: 0 0.125rem;
+  color: rgba(var(--userflow-toolbar-foreground-color-rgb), 0.5);
+  background-color: rgba(var(--userflow-main-background-color-rgb), 1);
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+.userflowjs-bubble-toolbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--userflow-toolbar-foreground-color);
+  background: transparent;
+  padding: 0;
+  border-radius: 0.25rem;
+}
+.userflowjs-bubble-toolbar-button:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-bubble-toolbar-button:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-bubble-toolbar-button:disabled {
+  cursor: default !important;
+  color: opacity 0.5;
+}
+.userflowjs-bubble-content {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.userflowjs-container--card {
+  border-radius: calc(var(--userflow-bubble-border-radius) / 2);
+  padding: 0.5rem;
+  background-color: var(--userflow-main-background-color);
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 0px 2px 8px rgba(0,0,0,0.15);
+}
+.userflowjs-container--subtle-border {
+  border-radius: calc(var(--userflow-bubble-border-radius) / 2);
+  padding: 0.5rem;
+  border: 1px solid rgba(var(--userflow-main-foreground-color-rgb), 0.1);
+}
+.userflowjs-container--brand-border {
+  border-radius: calc(var(--userflow-bubble-border-radius) / 2);
+  padding: 0.5rem;
+  border: 1px solid var(--userflow-brand-background-color);
+}
+.userflowjs-container--subtle-background {
+  border-radius: calc(var(--userflow-bubble-border-radius) / 2);
+  padding: 0.5rem;
+  background-color: rgba(var(--userflow-main-foreground-color-rgb), 0.04);
+}
+.userflowjs-container--brand-background {
+  border-radius: calc(var(--userflow-bubble-border-radius) / 2);
+  padding: 0.5rem;
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-bubble-buttons {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--userflow-buttons-justify-content);
+  align-items: start;
+  flex-shrink: 0;
+  gap: 0.5rem;
+}
+.userflowjs-bubble-buttons:not(:has(.userflowjs-bubble-button:not(.userflowjs-bubble-button--hidden))) {
+  display: none;
+}
+.userflowjs-bubble-button {
+  display: inline-flex;
+  align-items: center;
+}
+.userflowjs-bubble-button--primary,
+.userflowjs-bubble-button--default,
+.userflowjs-bubble-button--banner-primary,
+.userflowjs-bubble-button--banner-secondary {
+  font-family: var(--userflow-font-family);
+  font-size: var(--userflow-font-size, 16px);
+  border-radius: var(--userflow-button-border-radius);
+  height: auto;
+  min-width: var(--userflow-button-min-width);
+  white-space: normal;
+  max-width: 100%;
+}
+.userflowjs-bubble-button--primary:disabled,
+.userflowjs-bubble-button--default:disabled,
+.userflowjs-bubble-button--banner-primary:disabled,
+.userflowjs-bubble-button--banner-secondary:disabled {
+  background-color: #f4f8fb;
+  border-color: #c3d5e0;
+  color: #c3d5e0;
+}
+.userflowjs-bubble-button--primary {
+  background-color: var(--userflow-primary-button-background-color);
+  color: var(--userflow-primary-button-font-color);
+  font-weight: var(--userflow-primary-button-font-weight);
+  border: var(--userflow-primary-button-border-width) solid var(--userflow-primary-button-border-color);
+  padding-top: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2 - var(--userflow-primary-button-border-width));
+  padding-bottom: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2 - var(--userflow-primary-button-border-width));
+}
+.userflowjs-bubble-button--primary:not(:disabled):hover {
+  border-color: var(--userflow-primary-button-hover-border-color);
+  background-color: var(--userflow-primary-button-hover-background-color);
+  color: var(--userflow-primary-button-hover-font-color);
+}
+.userflowjs-bubble-button--primary:not(:disabled):active:not(.userflowjs-bubble-button--no-active) {
+  border-color: var(--userflow-primary-button-active-border-color);
+  background-color: var(--userflow-primary-button-active-background-color);
+  color: var(--userflow-primary-button-active-font-color);
+}
+.userflowjs-bubble-button--default {
+  background-color: var(--userflow-default-button-background-color);
+  color: var(--userflow-default-button-font-color);
+  font-weight: var(--userflow-default-button-font-weight);
+  border: var(--userflow-default-button-border-width) solid var(--userflow-default-button-border-color);
+  padding-top: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2 - var(--userflow-default-button-border-width));
+  padding-bottom: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2 - var(--userflow-default-button-border-width));
+}
+.userflowjs-bubble-button--default:not(:disabled):hover {
+  border-color: var(--userflow-default-button-hover-border-color);
+  background-color: var(--userflow-default-button-hover-background-color);
+  color: var(--userflow-default-button-hover-font-color);
+}
+.userflowjs-bubble-button--default:not(:disabled):active:not(.userflowjs-bubble-button--no-active) {
+  border-color: var(--userflow-default-button-active-border-color);
+  background-color: var(--userflow-default-button-active-background-color);
+  color: var(--userflow-default-button-active-font-color);
+}
+.userflowjs-bubble-button--banner-primary,
+.userflowjs-bubble-button--banner-secondary {
+  min-width: 0;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.userflowjs-bubble-button--banner-primary {
+  background-color: var(--userflow-banner-foreground-color);
+  color: var(--userflow-banner-background-color);
+  border: 0;
+  padding-top: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2);
+  padding-bottom: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2);
+}
+.userflowjs-bubble-button--banner-primary:not(:disabled):hover {
+  background-color: var(--userflow-banner-hover-foreground-color);
+}
+.userflowjs-bubble-button--banner-primary:not(:disabled):active:not(.userflowjs-bubble-button--no-active) {
+  background-color: var(--userflow-banner-active-foreground-color);
+}
+.userflowjs-bubble-button--banner-secondary {
+  min-width: none;
+  background-color: var(--userflow-banner-background-color);
+  color: var(--userflow-banner-foreground-color);
+  border: 1px solid var(--userflow-banner-foreground-color);
+  padding-top: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2 - 1px);
+  padding-bottom: calc((var(--userflow-button-height) - var(--userflow-line-height)) / 2 - 1px);
+}
+.userflowjs-bubble-button--banner-secondary:not(:disabled):hover {
+  background-color: var(--userflow-banner-hover-background-color);
+}
+.userflowjs-bubble-button--banner-secondary:not(:disabled):active:not(.userflowjs-bubble-button--no-active) {
+  background-color: var(--userflow-banner-active-background-color);
+}
+.userflowjs-bubble-button--hidden {
+  display: none;
+}
+.userflowjs-bubble-button-text {
+  min-width: 0;
+  flex: 1 1 0%;
+  text-align: var(--userflow-button-text-align);
+}
+.userflowjs-tertiary-button {
+  border: 0;
+  padding: 0 0.5rem;
+  color: var(--userflow-widget-background-color);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.userflowjs-tertiary-button:not(:disabled):hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-tertiary-button:not(:disabled):active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-text-input,
+.userflowjs-textarea {
+  display: block;
+  width: 100% !important;
+  border: 1px solid rgba(var(--userflow-main-foreground-color-rgb), 0.25) !important;
+  border-radius: calc(var(--userflow-font-size) * 0.25) !important;
+  background: var(--userflow-main-background-color) !important;
+  font-size: var(--userflow-font-size) !important;
+  color: var(--userflow-main-foreground-color) !important;
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+  -webkit-appearance: none !important;
+}
+.userflowjs-text-input:focus,
+.userflowjs-textarea:focus {
+  outline: 0;
+  border-color: var(--userflow-question-color) !important;
+  box-shadow: 0 0 0 3px var(--userflow-focus-color) !important;
+}
+.userflowjs-text-input::placeholder,
+.userflowjs-textarea::placeholder {
+  color: var(--userflow-main-foreground-color) !important;
+  opacity: 0.5;
+}
+.userflowjs-text-input {
+  padding: 0 1rem;
+  height: calc(var(--userflow-line-height) + 2 * 0.5rem);
+}
+.userflowjs-textarea {
+  padding: calc(0.5rem - 1px) 1rem;
+  line-height: var(--userflow-line-height);
+}
+.userflowjs-bubble-question {
+  position: relative;
+}
+.userflowjs-bubble-question__text-input,
+.userflowjs-bubble-question__textarea {
+  border-color: var(--userflow-question-color) !important;
+  color: var(--userflow-question-color) !important;
+  margin-bottom: 1rem;
+}
+.userflowjs-bubble-question__scale-options {
+  display: flex;
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__scale-options:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__scale-options:focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-bubble-question__scale-option {
+  display: block;
+  min-width: 0;
+  flex: 1 1 0%;
+  height: 2.5rem;
+  line-height: calc(2.5rem - 2px);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: var(--userflow-question-color-lightest);
+  color: var(--userflow-question-color);
+  border: 1px solid var(--userflow-question-color);
+  transition: background-color 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__scale-option:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__scale-option:not(:disabled) {
+  cursor: pointer;
+}
+.userflowjs-bubble-question__scale-option:not(:disabled):hover,
+.userflowjs-bubble-question__scale-option:not(:disabled):focus-visible {
+  background-color: var(--userflow-question-color-lighter);
+}
+.userflowjs-bubble-question__scale-option:not(:disabled):focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-focus-color), inset 0 0 0 4px var(--userflow-main-background-color);
+}
+[dir="ltr"] .userflowjs-bubble-question__scale-option:first-child {
+  border-top-left-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="rtl"] .userflowjs-bubble-question__scale-option:first-child {
+  border-top-right-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="ltr"] .userflowjs-bubble-question__scale-option:first-child {
+  border-bottom-left-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="rtl"] .userflowjs-bubble-question__scale-option:first-child {
+  border-bottom-right-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="ltr"] .userflowjs-bubble-question__scale-option:last-child {
+  border-top-right-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="rtl"] .userflowjs-bubble-question__scale-option:last-child {
+  border-top-left-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="ltr"] .userflowjs-bubble-question__scale-option:last-child {
+  border-bottom-right-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="rtl"] .userflowjs-bubble-question__scale-option:last-child {
+  border-bottom-left-radius: calc(var(--userflow-font-size) * 0.25);
+}
+[dir="ltr"] .userflowjs-bubble-question__scale-option:not(:first-child) {
+  border-left: 0;
+}
+[dir="rtl"] .userflowjs-bubble-question__scale-option:not(:first-child) {
+  border-right: 0;
+}
+.userflowjs-bubble-question__scale-option--selected {
+  background-color: var(--userflow-question-color);
+  color: #fff;
+}
+.userflowjs-bubble-question__scale-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+.userflowjs-bubble-question__scale-label {
+  min-width: 0;
+  flex: 1 1 0%;
+  font-size: 14px;
+  opacity: 0.5;
+}
+.userflowjs-bubble-question__scale-label--center {
+  text-align: center;
+}
+[dir="ltr"] .userflowjs-bubble-question__scale-label--right {
+  text-align: right;
+}
+[dir="rtl"] .userflowjs-bubble-question__scale-label--right {
+  text-align: left;
+}
+.userflowjs-bubble-question__stars-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.userflowjs-bubble-question__stars {
+  display: flex;
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__stars:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__stars:focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-bubble-question__star {
+  display: block;
+  padding: 0.5rem;
+  margin: 0;
+  background-color: transparent;
+  color: var(--userflow-question-color);
+  border: none;
+  border-radius: calc(var(--userflow-font-size) * 0.125);
+  transition: opacity 200ms cubic-bezier(0.25, 0.8, 0.5, 1), box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__star:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__star:not(:disabled) {
+  cursor: pointer;
+}
+.userflowjs-bubble-question__star:not(:disabled).userflowjs-bubble-question__star--hovered .userflowjs-star-shape,
+.userflowjs-bubble-question__star:not(:disabled):focus-visible .userflowjs-star-shape {
+  fill: var(--userflow-question-color-lighter);
+}
+.userflowjs-bubble-question__star:not(:disabled):focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-bubble-question__star--selected .userflowjs-star-shape {
+  fill: var(--userflow-question-color);
+}
+.userflowjs-bubble-question__star--not-selected {
+  opacity: 0;
+}
+.userflowjs-bubble-question__star-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 0.25rem auto;
+}
+.userflowjs-bubble-question__star-value {
+  text-align: center;
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  font-weight: var(--userflow-font-weight-bold);
+  color: var(--userflow-question-color);
+}
+.userflowjs-bubble-question__multiple-choice-hint {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  font-variant: tabular-nums;
+}
+.userflowjs-bubble-question__multiple-choice-hint--error {
+  opacity: 1;
+  color: #eb1e47;
+}
+.userflowjs-bubble-question__multiple-choice {
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__multiple-choice:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__multiple-choice > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.userflowjs-bubble-question__multiple-choice--multiple-selection {
+  margin-bottom: 0.5rem;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-option {
+  padding-left: 0.5rem;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-option {
+  padding-right: 0.5rem;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-option {
+  padding-right: 0;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-option {
+  padding-left: 0;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-option {
+  text-align: left;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-option {
+  text-align: right;
+}
+.userflowjs-bubble-question__multiple-choice-option {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  line-height: 24px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 0;
+  background-color: var(--userflow-question-color-lightest);
+  color: var(--userflow-question-color);
+  border: 1px solid var(--userflow-question-color);
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  transition: color 200ms cubic-bezier(0.25, 0.8, 0.5, 1), background-color 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__multiple-choice-option:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__multiple-choice-option:not(:disabled):not(.userflowjs-bubble-question__multiple-choice-option--other) {
+  cursor: pointer;
+}
+.userflowjs-bubble-question__multiple-choice-option:not(:disabled):not(.userflowjs-bubble-question__multiple-choice-option--other):hover,
+.userflowjs-bubble-question__multiple-choice-option:not(:disabled):not(.userflowjs-bubble-question__multiple-choice-option--other):focus-visible {
+  background-color: var(--userflow-question-color-lighter);
+}
+.userflowjs-bubble-question__multiple-choice-option:not(:disabled):not(.userflowjs-bubble-question__multiple-choice-option--other):focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-focus-color), inset 0 0 0 4px var(--userflow-main-background-color);
+}
+.userflowjs-bubble-question__multiple-choice-option--selected {
+  background: var(--userflow-question-color-lighter);
+}
+.userflowjs-bubble-question__multiple-choice-option--selected .userflowjs-bubble-question__multiple-choice-radio-inner {
+  background: var(--userflow-question-color);
+}
+.userflowjs-bubble-question__multiple-choice-option--selected .userflowjs-bubble-question__multiple-choice-checkbox {
+  background: var(--userflow-question-color);
+}
+.userflowjs-bubble-question__multiple-choice-option--selected .userflowjs-bubble-question__multiple-choice-checkbox-inner {
+  color: var(--userflow-main-background-color);
+}
+.userflowjs-bubble-question__multiple-choice-option--selected .userflowjs-bubble-question__multiple-choice-option-submit {
+  visibility: hidden;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-radio,[dir="ltr"] 
+.userflowjs-bubble-question__multiple-choice-checkbox {
+  margin-right: 0.5rem;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-radio,[dir="rtl"] 
+.userflowjs-bubble-question__multiple-choice-checkbox {
+  margin-left: 0.5rem;
+}
+.userflowjs-bubble-question__multiple-choice-radio,
+.userflowjs-bubble-question__multiple-choice-checkbox {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.userflowjs-bubble-question__multiple-choice-radio {
+  background-color: var(--userflow-main-background-color);
+  border: 1px solid var(--userflow-question-color);
+  border-radius: 100%;
+  padding: 2px;
+}
+.userflowjs-bubble-question__multiple-choice-radio-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: var(--userflow-main-background-color);
+  transition: background-color 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__multiple-choice-checkbox {
+  cursor: pointer;
+  background-color: var(--userflow-main-background-color);
+  border: 1px solid var(--userflow-question-color);
+  border-radius: 0.125rem;
+  padding: 1px;
+  transition: background-color 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__multiple-choice-checkbox-inner {
+  color: transparent;
+}
+.userflowjs-bubble-question__multiple-choice-checkbox-inner svg {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-option-text {
+  padding-right: 1rem;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-option-text {
+  padding-left: 1rem;
+}
+.userflowjs-bubble-question__multiple-choice-option-text {
+  min-width: 0;
+  flex: 1 1 0%;
+}
+.userflowjs-bubble-question__multiple-choice-option-input {
+  min-width: 0;
+  flex: 1 1 0%;
+  width: 0;
+  background: transparent;
+  border: 0;
+  height: 24px;
+  padding: 0;
+  font-size: var(--userflow-font-size);
+  color: var(--userflow-question-color);
+  -webkit-appearance: none;
+}
+.userflowjs-bubble-question__multiple-choice-option-input:focus {
+  outline: none;
+}
+.userflowjs-bubble-question__multiple-choice-option-input::placeholder {
+  color: var(--userflow-main-foreground-color) !important;
+  opacity: 0.5;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-option-submit {
+  margin-left: 0.5rem;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-option-submit {
+  margin-right: 0.5rem;
+}
+[dir="ltr"] .userflowjs-bubble-question__multiple-choice-option-submit {
+  margin-right: 0.25rem;
+}
+[dir="rtl"] .userflowjs-bubble-question__multiple-choice-option-submit {
+  margin-left: 0.25rem;
+}
+.userflowjs-bubble-question__multiple-choice-option-submit {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: var(--userflow-question-color);
+  color: #fff;
+  border: 0;
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  transition: background-color 200ms cubic-bezier(0.25, 0.8, 0.5, 1), box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-question__multiple-choice-option-submit:hover,
+.userflowjs-bubble-question__multiple-choice-option-submit:focus {
+  background-color: var(--userflow-question-color-medium-light);
+}
+.userflowjs-bubble-question__multiple-choice-option-submit:focus {
+  outline: 0;
+}
+.userflowjs-bubble-question__multiple-choice-option-submit:focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-bubble-question__error {
+  color: #eb1e47;
+  margin-bottom: 0.5rem;
+}
+.userflowjs-bubble-menu__title {
+  font-size: calc(var(--userflow-font-size) * 1.375);
+  font-weight: 400;
+  text-align: center;
+}
+.userflowjs-star-shape {
+  fill-rule: evenodd;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  stroke: var(--userflow-question-color);
+  fill: var(--userflow-main-background-color, #fff);
+  transition: fill 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-menu__item {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+}
+.userflowjs-bubble-made-with-userflow {
+  height: 1rem;
+}
+[dir="ltr"] .userflowjs-bubble-made-with-userflow__absolute {
+  left: 0.75rem;
+}
+[dir="rtl"] .userflowjs-bubble-made-with-userflow__absolute {
+  right: 0.75rem;
+}
+.userflowjs-bubble-made-with-userflow__absolute {
+  position: absolute;
+  bottom: 0.5rem;
+  display: flex;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.userflowjs-bubble-made-with-userflow__absolute a {
+  display: block;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--userflow-main-foreground-color);
+  opacity: 0.5;
+}
+.userflowjs-bubble-made-with-userflow__absolute a,
+.userflowjs-bubble-made-with-userflow__absolute a:hover {
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-bubble-made-with-userflow__absolute a:hover {
+  opacity: 0.75;
+}
+[dir="ltr"] .userflowjs-bubble-made-with-userflow__absolute a svg {
+  margin-right: 6px;
+}
+[dir="rtl"] .userflowjs-bubble-made-with-userflow__absolute a svg {
+  margin-left: 6px;
+}
+.userflowjs-bubble-made-with-userflow__absolute a svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+.userflowjs-bubble-made-with-userflow__absolute a svg path {
+  fill: var(--userflow-main-foreground-color);
+}
+.userflowjs-bubble-made-with-userflow__absolute a svg path:first-child {
+  opacity: 0.7;
+}
+.userflowjs-bubble-checklist-progress {
+  position: relative;
+  height: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+[dir="ltr"] .userflowjs-bubble-checklist-progress-bg,[dir="ltr"] 
+.userflowjs-bubble-checklist-progress-fill {
+  left: 0;
+}
+[dir="rtl"] .userflowjs-bubble-checklist-progress-bg,[dir="rtl"] 
+.userflowjs-bubble-checklist-progress-fill {
+  right: 0;
+}
+.userflowjs-bubble-checklist-progress-bg,
+.userflowjs-bubble-checklist-progress-fill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.userflowjs-bubble-checklist-progress-bg {
+  width: 100%;
+  color: var(--userflow-progress-bar-color);
+  border: 1px solid var(--userflow-progress-bar-color);
+  border-radius: 12px;
+}
+.userflowjs-bubble-checklist-progress-bg .userflowjs-bubble-checklist-progress-text {
+  padding: 0 calc(0.75rem - 1px);
+  line-height: calc(24px - 2px);
+}
+.userflowjs-bubble-checklist-progress-fill {
+  background-color: var(--userflow-progress-bar-color);
+  color: var(--userflow-main-background-color);
+  transition: width 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-checklist-progress-text {
+  font-size: 12px;
+  font-weight: var(--userflow-font-weight-bold);
+  padding: 0 0.75rem;
+  line-height: 24px;
+}
+.userflowjs-bubble-section-name {
+  font-weight: var(--userflow-font-weight-bold);
+  text-align: center;
+}
+.userflowjs-bubble-section-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.userflowjs-bubble-section-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--userflow-main-foreground-color);
+  font-weight: 400;
+  font-size: calc(var(--userflow-font-size) * 0.875) !important;
+  height: 1.5rem;
+  padding: 0;
+}
+.userflowjs-bubble-section-button:hover:not(:disabled) {
+  opacity: 0.75;
+}
+.userflowjs-bubble-section-button:disabled {
+  opacity: 0.5;
+}
+[dir="ltr"] .userflowjs-bubble-section-button > *:first-child {
+  margin-right: 0.25rem;
+}
+[dir="rtl"] .userflowjs-bubble-section-button > *:first-child {
+  margin-left: 0.25rem;
+}
+.userflowjs-bubble-frame-root .userflowjs-bubble-tasks {
+  margin: 0 -24px;
+}
+.userflowjs-resource-center-checklist .userflowjs-bubble-tasks {
+  margin: 0 -0.5rem;
+}
+[dir="ltr"] .userflowjs-bubble-task {
+  text-align: left;
+}
+[dir="rtl"] .userflowjs-bubble-task {
+  text-align: right;
+}
+.userflowjs-bubble-task {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: none;
+  width: 100%;
+  line-height: var(--userflow-line-height, 24px);
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-bubble-task::-moz-focus-inner {
+  border: 0;
+}
+.userflowjs-bubble-task:focus {
+  outline: none;
+}
+.userflowjs-bubble-task--clickable {
+  cursor: pointer;
+}
+.userflowjs-bubble-task--clickable:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-focus-color), inset 0 0 0 4px var(--userflow-main-background-color);
+}
+.userflowjs-bubble-task--completed .userflowjs-bubble-task__checkmark {
+  color: #fff;
+  background-color: var(--userflow-checkmark-background-color);
+  border-color: var(--userflow-checkmark-background-color);
+}
+.userflowjs-bubble-task--completed .userflowjs-bubble-task__content {
+  text-decoration: var(--userflow-completed-task-text-decoration);
+  opacity: 0.5;
+}
+.userflowjs-bubble-task--just-completed .userflowjs-bubble-task__checkmark {
+  animation: userflowjs-bubble-task-just-completed 500ms ease-out;
+}
+.userflowjs-bubble-frame-root .userflowjs-bubble-task {
+  padding: 0.5rem 24px;
+  transition: background 200ms cubic-bezier(0.25, 0.8, 0.5, 1), box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-bubble-frame-root .userflowjs-bubble-task:hover {
+  background-color: rgba(var(--userflow-main-foreground-color-rgb), 0.05);
+}
+.userflowjs-bubble-frame-root .userflowjs-bubble-task:hover .userflowjs-bubble-task__arrow {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: transform 200ms cubic-bezier(0.25, 0.8, 0.5, 1), opacity 200ms linear;
+}
+.userflowjs-resource-center-checklist .userflowjs-bubble-task {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-resource-center-checklist .userflowjs-bubble-task:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-resource-center-checklist .userflowjs-bubble-task:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-bubble-task--disabled {
+  opacity: 0.5;
+}
+[dir="ltr"] .userflowjs-bubble-task__checkmark {
+  margin-right: 1rem;
+}
+[dir="rtl"] .userflowjs-bubble-task__checkmark {
+  margin-left: 1rem;
+}
+.userflowjs-bubble-task__checkmark {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(var(--userflow-main-foreground-color-rgb), 0.25);
+  border-radius: 100%;
+  padding: 0.375rem;
+  background-color: var(--userflow-main-background-color);
+}
+.userflowjs-bubble-task__checkmark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.userflowjs-bubble-task__content {
+  min-width: 0;
+  flex: 1 1 0%;
+  transition: opacity 200ms linear;
+}
+.userflowjs-bubble-task__name {
+  font-weight: var(--userflow-font-weight-bold);
+}
+.userflowjs-bubble-task__text {
+  opacity: 0.75;
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  line-height: 1rem;
+}
+[dir="ltr"] .userflowjs-bubble-task__arrow {
+  margin-left: 1rem;
+}
+[dir="rtl"] .userflowjs-bubble-task__arrow {
+  margin-right: 1rem;
+}
+.userflowjs-bubble-task__arrow {
+  width: 16px;
+  height: 16px;
+  color: var(--userflow-checkmark-background-color);
+  opacity: 0;
+  transform: translateX(-16px);
+}
+.userflowjs-bubble-task__arrow svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+[dir="rtl"] .userflowjs-bubble-task__arrow {
+  transform: translateX(16px);
+}
+.userflowjs-bubble-dismiss-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.userflowjs-bubble-frame-root .userflowjs-bubble-dismiss-row {
+  margin-bottom: -0.5rem;
+}
+.userflowjs-bubble-dismiss-button {
+  display: block;
+  background-color: transparent;
+  color: var(--userflow-main-foreground-color);
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px !important;
+  height: 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.userflowjs-bubble-dismiss-button:hover {
+  opacity: 0.75;
+}
+.userflowjs-bubble-dismiss-button--completed {
+  opacity: 1;
+  color: var(--userflow-link-color);
+  font-weight: var(--userflow-font-weight-bold);
+}
+.userflowjs-banner-root {
+  position: relative;
+  background: var(--userflow-banner-background-color);
+  color: var(--userflow-banner-foreground-color);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.userflowjs-banner-root--content-layout-START .userflowjs-banner-inner {
+  justify-content: start;
+}
+.userflowjs-banner-root--content-layout-CENTER .userflowjs-banner-inner {
+  justify-content: center;
+}
+.userflowjs-banner-root--content-layout-SPACE_BETWEEN .userflowjs-banner-inner {
+  justify-content: space-between;
+}
+.userflowjs-banner-inner {
+  min-width: 0;
+  flex: 1000000 1 0%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  margin: 0 0.5rem;
+}
+.userflowjs-banner-content {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.userflowjs-banner-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.userflowjs-banner-buttons > * {
+  white-space: nowrap;
+}
+.userflowjs-banner-start-spacer {
+  min-width: 0;
+  flex: 1 1 0%;
+  max-width: var(--userflow-button-height);
+  height: var(--userflow-button-height);
+}
+.userflowjs-banner-close {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--userflow-button-height);
+  height: var(--userflow-button-height);
+  color: var(--userflow-banner-foreground-color);
+  background: transparent;
+  padding: 0;
+  border-radius: 0.25rem;
+}
+.userflowjs-banner-close:hover {
+  background-color: var(--userflow-banner-hover-background-color);
+}
+.userflowjs-banner-close:active {
+  background-color: var(--userflow-banner-active-background-color);
+}
+.userflowjs-banner-close:disabled {
+  cursor: default !important;
+  color: opacity 0.5;
+}
+.userflowjs-resource-center-frame-root {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-radius var(--userflow-resource-center-transition-duration);
+}
+.userflowjs-resource-center-frame-root--placement-top-left .userflowjs-resource-center-close-button,
+.userflowjs-resource-center-frame-root--placement-top-right .userflowjs-resource-center-close-button {
+  transform: rotate(180deg);
+}
+.userflowjs-resource-center-frame-root--closed {
+  border-radius: var(--userflow-resource-center-launcher-border-radius);
+}
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-launcher-button {
+  opacity: 1;
+}
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-header,
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-body,
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-made-with-userflow,
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-preview {
+  position: absolute;
+  visibility: hidden;
+}
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-header-content,
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-body-content,
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-made-with-userflow-content,
+.userflowjs-resource-center-frame-root--closed .userflowjs-resource-center-preview-content {
+  opacity: 0;
+}
+.userflowjs-resource-center-frame-root--open {
+  border-radius: var(--userflow-bubble-border-radius);
+}
+.userflowjs-resource-center-frame-root--open .userflowjs-resource-center-launcher-container {
+  position: absolute;
+  visibility: hidden;
+}
+.userflowjs-resource-center-frame-root--open .userflowjs-resource-center-launcher-button {
+  opacity: 0;
+}
+.userflowjs-resource-center-frame-root--open .userflowjs-resource-center-header-content,
+.userflowjs-resource-center-frame-root--open .userflowjs-resource-center-body-content,
+.userflowjs-resource-center-frame-root--open .userflowjs-resource-center-made-with-userflow-content,
+.userflowjs-resource-center-frame-root--open .userflowjs-resource-center-preview-content {
+  opacity: 1;
+}
+.userflowjs-resource-center-body,
+.userflowjs-resource-center-header {
+  width: var(--userflow-resource-center-width);
+}
+.userflowjs-resource-center-frame-root--animating .userflowjs-resource-center-body {
+  pointer-events: none;
+  overflow: hidden;
+}
+.userflowjs-resource-center-launcher-container {
+  min-width: 0;
+  flex: 1 1 0%;
+  cursor: pointer;
+  background-color: var(--userflow-brand-background-color);
+}
+.userflowjs-resource-center-launcher-button {
+  min-width: var(--userflow-resource-center-collapsed-height);
+  height: var(--userflow-resource-center-collapsed-height);
+  display: inline-flex;
+  align-items: center;
+  outline: 0;
+  border-radius: var(--userflow-resource-center-launcher-border-radius);
+  color: var(--userflow-brand-foreground-color);
+  transition: opacity var(--userflow-resource-center-transition-duration), box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-resource-center-launcher-button:hover,
+.userflowjs-resource-center-launcher-button.userflowjs-resource-center-launcher-button--hover {
+  background-color: var(--userflow-brand-hover-background-color);
+}
+.userflowjs-resource-center-launcher-button:active {
+  background-color: var(--userflow-brand-active-background-color);
+}
+.userflowjs-resource-center-launcher-button:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-brand-active-background-color), inset 0 0 0 4px var(--userflow-brand-background-color);
+}
+[dir="ltr"] .userflowjs-resource-center-launcher-button > *:not(:first-child) {
+  margin-left: calc(var(--userflow-resource-center-collapsed-height) / 3.75);
+}
+[dir="rtl"] .userflowjs-resource-center-launcher-button > *:not(:first-child) {
+  margin-right: calc(var(--userflow-resource-center-collapsed-height) / 3.75);
+}
+[dir="ltr"] .userflowjs-resource-center-launcher-badge {
+  margin-left: calc(var(--userflow-resource-center-collapsed-height) / 4);
+}
+[dir="rtl"] .userflowjs-resource-center-launcher-badge {
+  margin-right: calc(var(--userflow-resource-center-collapsed-height) / 4);
+}
+.userflowjs-resource-center-launcher-badge {
+  width: calc(var(--userflow-resource-center-collapsed-height) / 2);
+  height: calc(var(--userflow-resource-center-collapsed-height) / 2);
+  line-height: calc(var(--userflow-resource-center-collapsed-height) / 2);
+  border-radius: 100%;
+  background-color: rgba(var(--userflow-brand-foreground-color-rgb), 0.1);
+  color: var(--userflow-brand-foreground-color);
+  text-align: center;
+  font-weight: var(--userflow-font-weight-bold);
+}
+.userflowjs-resource-center-launcher-text {
+  white-space: nowrap;
+  font-size: calc(var(--userflow-font-size) * 1.125);
+  font-weight: 500;
+}
+[dir="ltr"] .userflowjs-resource-center-launcher-text:first-child {
+  margin-left: calc(var(--userflow-resource-center-collapsed-height) / 2.5);
+}
+[dir="rtl"] .userflowjs-resource-center-launcher-text:first-child {
+  margin-right: calc(var(--userflow-resource-center-collapsed-height) / 2.5);
+}
+[dir="ltr"] .userflowjs-resource-center-launcher-badge + .userflowjs-resource-center-launcher-text {
+  margin-left: calc(var(--userflow-resource-center-collapsed-height) / 7.5);
+}
+[dir="rtl"] .userflowjs-resource-center-launcher-badge + .userflowjs-resource-center-launcher-text {
+  margin-right: calc(var(--userflow-resource-center-collapsed-height) / 7.5);
+}
+.userflowjs-resource-center-launcher-divider {
+  width: 1px;
+  height: var(--userflow-line-height);
+  background-color: rgba(var(--userflow-brand-foreground-color-rgb), 0.2);
+  overflow: hidden;
+}
+.userflowjs-resource-center-launcher-icon {
+  width: calc(var(--userflow-resource-center-collapsed-height) / 2);
+  height: calc(var(--userflow-resource-center-collapsed-height) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--userflow-resource-center-collapsed-height) * 0.6);
+  font-weight: 500;
+}
+.userflowjs-resource-center-launcher-icon:first-child {
+  margin: calc(var(--userflow-resource-center-collapsed-height) / 4);
+}
+[dir="ltr"] .userflowjs-resource-center-launcher-icon:not(:first-child) {
+  margin-right: calc(var(--userflow-resource-center-collapsed-height) / 4);
+}
+[dir="rtl"] .userflowjs-resource-center-launcher-icon:not(:first-child) {
+  margin-left: calc(var(--userflow-resource-center-collapsed-height) / 4);
+}
+.userflowjs-resource-center-launcher-icon:not(:first-child) {
+  margin-top: calc(var(--userflow-resource-center-collapsed-height) / 4);
+  margin-bottom: calc(var(--userflow-resource-center-collapsed-height) / 4);
+}
+.userflowjs-resource-center-launcher-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.userflowjs-resource-center-header {
+  order: 1;
+  background-color: var(--userflow-brand-background-color);
+}
+.userflowjs-resource-center-header-content {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  color: var(--userflow-brand-foreground-color);
+  transition: opacity var(--userflow-resource-center-transition-duration);
+}
+.userflowjs-resource-center-header-content .userflowjs-resource-center-icon-button,
+.userflowjs-resource-center-header-content .userflowjs-resource-center-icon-button:hover {
+  color: var(--userflow-brand-foreground-color);
+}
+.userflowjs-resource-center-header-content .userflowjs-resource-center-icon-button:hover {
+  background-color: var(--userflow-brand-hover-background-color);
+}
+.userflowjs-resource-center-header-content .userflowjs-resource-center-icon-button:active {
+  background-color: var(--userflow-brand-active-background-color);
+}
+.userflowjs-resource-center-header-content .userflowjs-resource-center-icon-button:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-brand-active-background-color), inset 0 0 0 4px var(--userflow-brand-background-color);
+}
+[dir="ltr"] .userflowjs-resource-center-header-text {
+  padding-left: 1rem;
+}
+[dir="rtl"] .userflowjs-resource-center-header-text {
+  padding-right: 1rem;
+}
+.userflowjs-resource-center-header-text {
+  font-size: calc(var(--userflow-font-size) * 1.125);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.userflowjs-resource-center-body {
+  order: 2;
+  min-height: 0;
+  min-width: 0;
+  flex: 1 1 0%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background-color: var(--userflow-main-background-color);
+}
+.userflowjs-resource-center-body-content {
+  transition: opacity var(--userflow-resource-center-transition-duration);
+}
+.userflowjs-resource-center-body-content--padding {
+  padding: 1rem;
+}
+.userflowjs-resource-center-body-content--padding.userflowjs-resource-center-body-content--with-made-with-userflow {
+  padding-bottom: 0.5rem;
+}
+.userflowjs-resource-center-body-content--same-background {
+  padding-top: 0;
+}
+.userflowjs-resource-center-icon-button,
+a.userflowjs-resource-center-icon-button {
+  cursor: pointer;
+  height: calc(var(--userflow-line-height) + 2 * 0.5rem);
+  padding: 0.5rem;
+  margin: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-resource-center-icon-button,
+a.userflowjs-resource-center-icon-button,
+.userflowjs-resource-center-icon-button:hover,
+a.userflowjs-resource-center-icon-button:hover {
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-resource-center-icon-button:focus,
+a.userflowjs-resource-center-icon-button:focus {
+  outline: 0;
+}
+.userflowjs-resource-center-icon-button:hover,
+a.userflowjs-resource-center-icon-button:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-resource-center-icon-button:active,
+a.userflowjs-resource-center-icon-button:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-resource-center-icon-button:focus-visible,
+a.userflowjs-resource-center-icon-button:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-focus-color), inset 0 0 0 4px var(--userflow-main-background-color);
+}
+.userflowjs-resource-center-icon-button svg,
+a.userflowjs-resource-center-icon-button svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: calc((var(--userflow-line-height) - 16px) / 2);
+}
+[dir="ltr"] .userflowjs-resource-center-icon-button__text {
+  margin-left: 0.25rem;
+}
+[dir="rtl"] .userflowjs-resource-center-icon-button__text {
+  margin-right: 0.25rem;
+}
+.userflowjs-resource-center-icon-button__text {
+  font-weight: 500;
+}
+[dir="ltr"] .userflowjs-resource-center-block {
+  text-align: left;
+}
+[dir="rtl"] .userflowjs-resource-center-block {
+  text-align: right;
+}
+.userflowjs-resource-center-block {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--userflow-main-foreground-color);
+  line-height: var(--userflow-line-height);
+}
+.userflowjs-resource-center-block:focus {
+  outline: 0;
+}
+.userflowjs-resource-center-block .userflowjs-resource-center-icon-button,
+.userflowjs-resource-center-block .userflowjs-resource-center-block-nav-icon {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+[dir="ltr"] .userflowjs-resource-center-block .userflowjs-resource-center-icon-button:last-child,[dir="ltr"] 
+.userflowjs-resource-center-block .userflowjs-resource-center-block-nav-icon:last-child {
+  margin-right: -0.5rem;
+}
+[dir="rtl"] .userflowjs-resource-center-block .userflowjs-resource-center-icon-button:last-child,[dir="rtl"] 
+.userflowjs-resource-center-block .userflowjs-resource-center-block-nav-icon:last-child {
+  margin-left: -0.5rem;
+}
+.userflowjs-resource-center-block--clickable {
+  cursor: pointer;
+  transition: box-shadow 200ms cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+.userflowjs-resource-center-block--clickable:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-resource-center-block--clickable:not(:disabled):active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-resource-center-block--clickable:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--userflow-focus-color), inset 0 0 0 4px var(--userflow-main-background-color);
+}
+a.userflowjs-resource-center-block--clickable,
+a.userflowjs-resource-center-block--clickable:hover {
+  color: inherit;
+  text-decoration: none;
+}
+[dir="ltr"] .userflowjs-resource-center-block-icon {
+  margin-right: 0.5rem;
+}
+[dir="rtl"] .userflowjs-resource-center-block-icon {
+  margin-left: 0.5rem;
+}
+.userflowjs-resource-center-block-icon {
+  width: var(--userflow-line-height);
+  height: var(--userflow-line-height);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userflowjs-resource-center-block-icon svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.userflowjs-resource-center-block-icon .userflowjs-unread-badge {
+  width: var(--userflow-line-height);
+  height: var(--userflow-line-height);
+  line-height: var(--userflow-line-height);
+}
+[dir="ltr"] .userflowjs-unread-dot {
+  margin-right: 0.375rem;
+}
+[dir="rtl"] .userflowjs-unread-dot {
+  margin-left: 0.375rem;
+}
+.userflowjs-unread-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--userflow-unread-badge-background-color);
+}
+.userflowjs-unread-badge {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: var(--userflow-unread-badge-background-color);
+  color: var(--userflow-unread-badge-foreground-color);
+  font-weight: 700;
+  font-size: calc(var(--userflow-font-size) * 14 / 16);
+  text-align: center;
+}
+.userflowjs-unread-badge span {
+  vertical-align: middle;
+}
+.userflowjs-unread-badge--clickable {
+  cursor: pointer;
+}
+.userflowjs-unread-badge-plus {
+  font-size: calc(var(--userflow-font-size) * 10 / 16);
+}
+.userflowjs-resource-center-block-text {
+  min-width: 0;
+  flex: 1 1 0%;
+}
+.userflowjs-resource-center-block-subtext {
+  font-size: calc(var(--userflow-font-size) * (14 / 16));
+  line-height: calc(var(--userflow-line-height) * (20 / 24));
+  opacity: 0.65;
+}
+.userflowjs-resource-center-block-nav-icon {
+  height: calc(var(--userflow-line-height) + 2 * 0.5rem);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userflowjs-resource-center-block-nav-icon svg {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: calc((var(--userflow-line-height) - 12px) / 2);
+}
+.userflowjs-resource-center-label {
+  padding: 0.5rem;
+  opacity: 0.5;
+  font-size: calc(var(--userflow-font-size) / (16 / 14));
+  font-weight: 500;
+}
+.userflowjs-resource-center-checklist {
+  position: relative;
+  padding: 0.5rem;
+}
+.userflowjs-resource-center-checklist .userflowjs-bubble-toolbar {
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+.userflowjs-resource-center-assistant-block:not(:first-child) {
+  margin-top: 0.5rem;
+}
+.userflowjs-resource-center-assistant-block:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.userflowjs-resource-center-divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: rgba(var(--userflow-main-foreground-color-rgb), 0.1);
+  margin: 1rem 0;
+}
+.userflowjs-resource-center-content-route {
+  padding: 0.5rem;
+}
+.userflowjs-resource-center-list-route-header {
+  display: flex;
+}
+.userflowjs-resource-center-list-route-title {
+  min-width: 0;
+  flex: 1 1 0%;
+  padding: 0.5rem;
+  font-size: calc(var(--userflow-font-size) * 1.25);
+  font-weight: var(--userflow-font-weight-bold);
+}
+.userflowjs-resource-center-list-route-search {
+  padding: 0.5rem;
+}
+.userflowjs-resource-center-list-route-error {
+  padding: 0.5rem;
+}
+.userflowjs-resource-center-list-route-spinner {
+  padding: 0.5rem 0;
+}
+.userflowjs-resource-center-made-with-userflow {
+  order: 3;
+  background-color: var(--userflow-main-background-color);
+}
+[dir="ltr"] .userflowjs-resource-center-made-with-userflow-content {
+  padding-left: 0.5rem;
+}
+[dir="rtl"] .userflowjs-resource-center-made-with-userflow-content {
+  padding-right: 0.5rem;
+}
+[dir="ltr"] .userflowjs-resource-center-made-with-userflow-content {
+  padding-right: 0;
+}
+[dir="rtl"] .userflowjs-resource-center-made-with-userflow-content {
+  padding-left: 0;
+}
+.userflowjs-resource-center-made-with-userflow-content {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  display: flex;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  transition: opacity var(--userflow-resource-center-transition-duration);
+}
+.userflowjs-resource-center-made-with-userflow-content a {
+  display: block;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--userflow-main-foreground-color);
+  border-radius: 0.25rem;
+  outline: 0;
+  white-space: nowrap;
+}
+.userflowjs-resource-center-made-with-userflow-content a > * {
+  opacity: 0.5;
+}
+.userflowjs-resource-center-made-with-userflow-content a:focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-resource-center-made-with-userflow-content a,
+.userflowjs-resource-center-made-with-userflow-content a:hover {
+  color: var(--userflow-main-foreground-color);
+}
+.userflowjs-resource-center-made-with-userflow-content a:hover > * {
+  opacity: 0.75;
+}
+[dir="ltr"] .userflowjs-resource-center-made-with-userflow-content a svg {
+  margin-right: 6px;
+}
+[dir="rtl"] .userflowjs-resource-center-made-with-userflow-content a svg {
+  margin-left: 6px;
+}
+.userflowjs-resource-center-made-with-userflow-content a svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+.userflowjs-resource-center-made-with-userflow-content a svg path {
+  fill: var(--userflow-main-foreground-color);
+}
+.userflowjs-resource-center-made-with-userflow-content a svg path:first-child {
+  opacity: 0.7;
+}
+.userflowjs-resource-center-preview {
+  order: 4;
+  background-color: var(--userflow-main-background-color);
+}
+.userflowjs-resource-center-preview-content {
+  display: flex;
+  background-color: rgba(var(--userflow-main-foreground-color-rgb), 0.05);
+  padding: 0.5rem;
+  transition: opacity var(--userflow-resource-center-transition-duration);
+}
+[dir="ltr"] .userflowjs-resource-center-preview-text {
+  padding-left: 0.5rem;
+}
+[dir="rtl"] .userflowjs-resource-center-preview-text {
+  padding-right: 0.5rem;
+}
+.userflowjs-resource-center-preview-text {
+  min-width: 0;
+  flex: 1 1 0%;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: calc(var(--userflow-font-size) * 0.625);
+  font-weight: 600;
+  color: var(--userflow-toolbar-foreground-color);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.userflowjs-resource-center-preview-button {
+  width: var(--userflow-line-height);
+  height: var(--userflow-line-height);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: rgba(var(--userflow-main-foreground-color-rgb), 0.75);
+}
+.userflowjs-resource-center-preview-button:focus-visible {
+  box-shadow: 0 0 0 1px var(--userflow-main-background-color), 0 0 0 4px var(--userflow-focus-color);
+}
+.userflowjs-resource-center-preview-button:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-resource-center-preview-button svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.userflowjs-resource-center-popout-frame-root {
+  background-color: var(--userflow-main-background-color);
+  padding: 1.5rem;
+}
+.userflowjs-assistant-chat {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userflowjs-assistant-chat__header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid transparent;
+}
+.userflowjs-assistant-chat__header--content-scrolled {
+  border-bottom-color: rgba(var(--userflow-main-foreground-color-rgb), 0.15);
+}
+.userflowjs-assistant-chat__title {
+  min-width: 0;
+  flex: 1 1 0%;
+  padding: 0 0.5rem;
+  margin: 0 !important;
+}
+.userflowjs-assistant-chat__content {
+  min-height: 0;
+  min-width: 0;
+  flex: 1 1 0%;
+  padding: 1rem;
+  padding-top: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.userflowjs-assistant-chat__intro {
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  line-height: calc(var(--userflow-line-height) * 0.875);
+  padding: 0 0.5rem 1rem 0.5rem;
+  border-bottom: 1px solid rgba(var(--userflow-main-foreground-color-rgb), 0.15);
+}
+.userflowjs-assistant-chat__message {
+  position: relative;
+}
+[dir="ltr"] .userflowjs-assistant-chat__user-content {
+  border-bottom-right-radius: 0.25rem;
+}
+[dir="rtl"] .userflowjs-assistant-chat__user-content {
+  border-bottom-left-radius: 0.25rem;
+}
+.userflowjs-assistant-chat__user-content {
+  color: var(--userflow-widget-foreground-color);
+  background-color: var(--userflow-widget-background-color);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+.userflowjs-assistant-chat__user-content--enter {
+  animation: userflowjs-assistant-chat-user-content-enter 300ms cubic-bezier(0.25, 0.8, 0.5, 1) both;
+}
+.userflowjs-assistant-chat__assistant-content {
+  padding: 0 0.5rem;
+}
+.userflowjs-assistant-chat__sources {
+  margin-top: 0.25rem;
+}
+.userflowjs-assistant-chat__sources-title {
+  opacity: 0.5;
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  padding: 0 0.5rem;
+}
+.userflowjs-assistant-chat__source {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: var(--userflow-font-weight-normal);
+  text-decoration: none !important;
+  color: var(--userflow-link-color);
+}
+.userflowjs-assistant-chat__source:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-assistant-chat__source:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-assistant-chat__rating--LIKE {
+  margin-top: 0.25rem;
+}
+.userflowjs-assistant-chat__rating--LIKE .userflowjs-assistant-chat__rating-options {
+  justify-content: flex-end;
+}
+.userflowjs-assistant-chat__rating--SCALE {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.userflowjs-assistant-chat__rating--SCALE .userflowjs-assistant-chat__rating-options {
+  justify-content: center;
+}
+.userflowjs-assistant-chat__rating--SCALE .userflowjs-assistant-chat__rating-options .userflowjs-assistant-chat__rating-option {
+  padding: 0.25rem 0.75rem;
+  height: 2rem;
+}
+.userflowjs-assistant-chat__rating--SCALE .userflowjs-assistant-chat__rating-options .userflowjs-assistant-chat__rating-option svg {
+  width: 24px;
+  height: 24px;
+}
+.userflowjs-assistant-chat__rating--SCALE .userflowjs-assistant-chat__rating-options .userflowjs-assistant-chat__rating-option--large-scale {
+  font-size: calc(var(--userflow-font-size) * 1.75);
+}
+.userflowjs-assistant-chat__rating-question {
+  opacity: 0.5;
+  font-size: calc(var(--userflow-font-size) * 0.875);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.userflowjs-assistant-chat__rating-options {
+  display: flex;
+}
+.userflowjs-assistant-chat__rating-option {
+  min-width: calc(var(--userflow-line-height) + 0.5rem);
+  height: calc(var(--userflow-line-height) + 0.5rem);
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
+  color: var(--userflow-widget-background-color);
+}
+.userflowjs-assistant-chat__rating-option:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-assistant-chat__rating-option:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-assistant-chat__rating-option:disabled:hover {
+  background-color: transparent;
+}
+.userflowjs-assistant-chat__rating-option:disabled:active {
+  background-color: transparent;
+}
+.userflowjs-assistant-chat__feedback-textarea {
+  min-width: 0;
+  flex: 1 1 0%;
+}
+.userflowjs-assistant-chat__feedback-textarea .userflowjs-textarea {
+  padding: calc(0.25rem - 1px) calc(var(--userflow-line-height) + 0.5rem) !important;
+}
+.userflowjs-assistant-chat__feedback-textarea .userflowjs-assistant-chat__rating-option {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: calc(var(--userflow-line-height) + 0.5rem);
+  overflow: hidden;
+  text-overflow: clip;
+}
+.userflowjs-assistant-chat__feedback-submit {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: calc(var(--userflow-line-height) + 2 * 0.25rem - 2px);
+  height: calc(var(--userflow-line-height) + 2 * 0.25rem - 2px);
+  border-radius: 0.25rem;
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-right-radius: border-bottom-right-radius;
+  padding: 0;
+  text-align: center;
+  color: var(--userflow-widget-background-color);
+}
+.userflowjs-assistant-chat__feedback-submit:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-assistant-chat__feedback-submit:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-assistant-chat__rating-thanks {
+  display: flex;
+  justify-content: center;
+}
+.userflowjs-assistant-chat__rating-thanks-message {
+  align-self: center;
+}
+.userflowjs-assistant-chat__error {
+  padding: 0 0.5rem;
+  color: #eb1e47;
+}
+.userflowjs-assistant-chat__contact {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.userflowjs-assistant-chat__prompt {
+  padding: 0 1rem 1rem 1rem;
+}
+.userflowjs-resource-center-body-content--with-made-with-userflow .userflowjs-assistant-chat__prompt {
+  padding-bottom: 0.5rem;
+}
+.userflowjs-assistant-chat-input {
+  position: relative;
+  min-width: 0;
+  flex: 1 1 0%;
+}
+.userflowjs-assistant-chat-input__textarea {
+  max-height: 200px;
+  padding-right: 2.5rem;
+  background-color: transparent !important;
+}
+.userflowjs-assistant-chat-input__submit {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: calc(var(--userflow-line-height) + 2 * (0.5rem - 1px));
+  height: calc(var(--userflow-line-height) + 2 * (0.5rem - 1px));
+  border-radius: 0.25rem;
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-right-radius: border-bottom-right-radius;
+  padding: 0;
+  color: var(--userflow-widget-background-color);
+}
+.userflowjs-assistant-chat-input__submit:hover {
+  background-color: var(--userflow-main-hover-background-color);
+}
+.userflowjs-assistant-chat-input__submit:active {
+  background-color: var(--userflow-main-active-background-color);
+}
+.userflowjs-announcement-unread-header {
+  height: 24px;
+  width: fit-content;
+  border-radius: 12px;
+  padding: 0 12px;
+  background-color: var(--userflow-unread-badge-background-color);
+  color: var(--userflow-unread-badge-foreground-color);
+  font-weight: 700;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+.userflowjs-announcement-seen-divider {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background-color: var(--userflow-main-foreground-color);
+  opacity: 0.1;
+  margin: 2rem auto;
+}
+.userflowjs-announcement-list-item {
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+.userflowjs-announcement-time {
+  margin-bottom: 0.5rem;
+}
+.userflowjs-announcement-time-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userflowjs-announcement-time-divider-line {
+  min-width: 0;
+  flex: 1 1 0%;
+  height: 1px;
+  overflow: hidden;
+  background-color: var(--userflow-main-foreground-color);
+  opacity: 0.1;
+}
+.userflowjs-announcement-time-text {
+  font-size: calc(var(--userflow-font-size) * 12 / 16);
+  line-height: calc(var(--userflow-line-height) * 12 / 16);
+  opacity: 0.6;
+}
+.userflowjs-announcement-title {
+  margin-bottom: 0.5rem !important;
+  font-weight: var(--userflow-font-weight-bold);
+}
+.userflowjs-announcement-title span {
+  vertical-align: middle;
+}
+.userflowjs-announcement-content {
+  margin-bottom: 0.5rem;
+}
+.userflowjs-announcement-more {
+  display: flex;
+  justify-content: end;
+}
+.userflowjs-announcement-show {
+  padding: 0.5rem;
+}
+.userflowjs-growing-textarea {
+  position: relative;
+}
+.userflowjs-growing-textarea textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  resize: none;
+}
+.userflowjs-growing-textarea__mirror {
+  pointer-events: none;
+  white-space: pre-wrap;
+  opacity: 0;
+  width: 100%;
+  max-height: 200px;
+}
+.userflowjs-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userflowjs-spinner svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  animation: userflowjs-spinner-indeterminate-spin 1000ms linear infinite;
+}
+.userflowjs-spinner--center {
+  height: 100%;
+}
+.userflowjs-spinner--fade-in {
+  animation: userflowjs-spinner-fade-in 500ms linear 50ms both;
+}
+.userflowjs-spinner__bg {
+  stroke: var(--userflow-main-foreground-color);
+  opacity: 0.05;
+}
+.userflowjs-spinner__fill {
+  stroke: var(--userflow-progress-bar-color);
+  transition: stroke-dasharray 300ms;
+}
+.userflowjs-bubble-alert {
+  border: 1px solid #f0c000;
+  background-color: #fefdf0;
+  border-radius: calc(var(--userflow-font-size) * 0.25);
+  padding: 0.5rem;
+  color: #132b39;
+}
+.userflowjs-bubble-content .userflowjs-bubble-alert:first-child {
+  margin-top: 1rem;
+}
+[dir="ltr"] .userflowjs-bubble-alert__label {
+  margin-right: 0.5rem;
+}
+[dir="rtl"] .userflowjs-bubble-alert__label {
+  margin-left: 0.5rem;
+}
+.userflowjs-bubble-alert__label {
+  display: inline-block;
+  font-weight: var(--userflow-font-weight-bold);
+  color: #f0c000;
+}
+.userflowjs-a11y-only {
+  position: absolute;
+  top: -999999px;
+  left: -999999px;
+}
+.flex-1 {
+  min-width: 0;
+  flex: 1 1 0%;
+}
+.userflowjs-bubble-content + .userflowjs-bubble-question,
+.userflowjs-bubble-question + .userflowjs-bubble-buttons,
+.flow-builder__question + .userflowjs-bubble-buttons,
+.userflowjs-bubble-content + .userflowjs-bubble-buttons,
+.userflowjs-bubble-menu__title + .userflowjs-bubble-menu__item,
+.userflowjs-bubble-menu__item + .userflowjs-bubble-menu__item,
+.userflowjs-bubble-content + .userflowjs-bubble-checklist-progress,
+.userflowjs-bubble-checklist-progress + .userflowjs-bubble-section-name,
+.userflowjs-bubble-checklist-progress + .userflowjs-bubble-tasks {
+  margin-top: 1rem;
+}
+.userflowjs-bubble-section-name + .userflowjs-bubble-tasks,
+.userflowjs-bubble-tasks + .userflowjs-bubble-section-buttons,
+.userflowjs-bubble-tasks + .userflowjs-bubble-dismiss-row,
+.userflowjs-bubble-section-buttons + .userflowjs-bubble-dismiss-row {
+  margin-top: 0.5rem;
+}
+@-moz-keyframes userflowjs-bubble-task-just-completed {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.75);
+  }
+  67% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes userflowjs-bubble-task-just-completed {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.75);
+  }
+  67% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes userflowjs-bubble-task-just-completed {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.75);
+  }
+  67% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes userflowjs-bubble-task-just-completed {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.75);
+  }
+  67% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes userflowjs-assistant-chat-user-content-enter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes userflowjs-assistant-chat-user-content-enter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-o-keyframes userflowjs-assistant-chat-user-content-enter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes userflowjs-assistant-chat-user-content-enter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-moz-keyframes userflowjs-spinner-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes userflowjs-spinner-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes userflowjs-spinner-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes userflowjs-spinner-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes userflowjs-spinner-indeterminate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes userflowjs-spinner-indeterminate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes userflowjs-spinner-indeterminate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes userflowjs-spinner-indeterminate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

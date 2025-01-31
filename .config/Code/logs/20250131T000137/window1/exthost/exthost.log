@@ -1,0 +1,10 @@
+2025-01-31 00:01:40.680 [info] Extension host with pid 9836 started
+2025-01-31 00:01:40.766 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-01-31 00:01:40.884 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-01-31 00:01:41.189 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-01-31 00:01:41.224 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-01-31 00:01:41.382 [info] Eager extensions activated
+2025-01-31 00:01:41.421 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-01-31 00:01:41.426 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-01-31 00:02:27.685 [info] Extension host terminating: renderer closed the MessagePort
+2025-01-31 00:02:27.711 [info] Extension host with pid 9836 exiting with code 0

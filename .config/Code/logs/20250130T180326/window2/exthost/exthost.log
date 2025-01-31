@@ -1,0 +1,4 @@
+2025-01-30 18:04:51.256 [info] Extension host with pid 7618 started
+2025-01-30 18:04:51.324 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-01-30 18:04:51.512 [info] Extension host terminating: renderer closed the MessagePort
+2025-01-30 18:04:51.526 [info] Extension host with pid 7618 exiting with code 0

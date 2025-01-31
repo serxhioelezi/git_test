@@ -1,0 +1,15 @@
+.userflowjs-avatar-frame-root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--userflow-main-background-color, #fff);
+  border-radius: 100%;
+}
+.userflowjs-avatar-frame-root img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.userflowjs-avatar-frame-root--minimizable {
+  cursor: pointer;
+}

@@ -1,0 +1,161 @@
+.streak-mod__VKatA_QjjC2JLPFnSgYy {
+	font-size: var(--streak-text-size-13);
+	line-height: 20px;
+}
+
+.streak-mod__p6d1XMq73rFor_iLN5hy {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.streak-mod__gcSQVDGFtBXTDSJfIrVb {
+	margin-left: 12px;
+}
+
+.streak-mod__z1wjcQqY7Ljd6rk7mS5h {
+	color: var(--streak-black-secondary);
+}
+
+.streak-mod__NIP6egAJ6f1hpe1rAMZ5 {
+	column-gap: 8px;
+	display: flex;
+	margin-top: 24px;
+}
+
+.streak-mod__z121od7_523emGdji5Xg {
+	font-size: var(--streak-text-size-13);
+	line-height: 20px;
+}
+
+.streak-mod__z121od7_523emGdji5Xg .streak-mod__ahcBKZqmUZhwv7Gg5eYe {
+		margin: 8px 0;
+	}
+
+.streak-mod__XNjKerrWBEUmFBNAQfLA {
+	color: var(--streak-black-secondary);
+}
+
+.streak-mod__fNpX45G5SHpRBdNsl4Jw {
+	margin-left: -10px;
+}
+
+.streak-mod__TSbYIU7XNHr6LURSGDsU {
+	display: grid;
+	grid-template-rows: repeat(3, min-content);
+	max-width: 300px;
+	row-gap: 4px;
+}
+
+.streak-mod__CLnEMmHcVQ3LGCeDFxRo,
+.streak-mod__kdFoXbrNBpydzB6OhjAr {
+	font-size: var(--streak-text-size-13);
+}
+
+.streak-mod__CLnEMmHcVQ3LGCeDFxRo {
+	font-family: var(--streak-font-sans-serif-2023);
+	font-weight: 500;
+}
+
+.streak-mod__kdFoXbrNBpydzB6OhjAr {
+	margin-bottom: 24px;
+	color: var(--streak-black-secondary);
+}
+
+.streak-mod__DDngvNaScIk9iXD8ISdJ {
+	display: flex;
+	justify-content: center;
+}
+
+.streak-mod__ALqWB3GEvrCUI3jU8E2c {
+	max-width: 1200px;
+}
+
+.streak-mod__EyVnFpSrS12852GNAy7D {
+	max-height: 400px;
+	overflow-y: auto;
+	padding-bottom: 16px;
+}
+
+.streak-mod__Cf1uKxpd774S3eTlDrsW {
+	column-gap: 16px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 84px);
+	/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+	row-gap: 16px;
+}
+
+.streak-mod__Cf1uKxpd774S3eTlDrsW > * {
+		width: fit-content;
+	}
+
+.streak-mod__EyVnFpSrS12852GNAy7D,
+.streak-mod__qu4MF8_VKkwLC3eTx3bX {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.streak-mod__qu4MF8_VKkwLC3eTx3bX {
+	align-items: center;
+	column-gap: 4px;
+	display: grid;
+	grid-template-columns: 1fr min-content;
+}
+
+.streak-mod__V3HjOkQAM_0tU_mkvhmG {
+	justify-content: flex-end;
+	border-top: 1px solid var(--streak-black-divider);
+	column-gap: 8px;
+	display: flex;
+	flex-shrink: 1;
+	margin-left: auto;
+	padding: 16px;
+}
+
+/* TODO: Overriding StreakButton's styles to make this button look like the mocks is
+    probably more effort than it's worth. Consider using a regular <button> and reusing
+    styles where appropriate. */
+.streak-mod__JDQOTfntcBjrFvSulili .streak__button.streak__button {
+	border-color: var(--streak-black-divider);
+	border-width: 1px;
+	color: var(--streak-black-secondary);
+	display: block;
+	flex-direction: column;
+	font-size: 11px;
+	font-weight: 300;
+	height: 84px;
+	line-height: normal;
+	padding: 5px;
+	white-space: normal;
+	width: 84px;
+}
+
+.streak-mod__JDQOTfntcBjrFvSulili .streak__button.streak__button:hover,
+.streak-mod__JDQOTfntcBjrFvSulili.streak-mod__FIUoRQSraFTUaafsFXCz .streak__button.streak__button {
+	background-color: var(--streak-primary-hover);
+	border-color: var(--streak-primary);
+	color: var(--streak-primary);
+}
+
+.streak-mod__JDQOTfntcBjrFvSulili .streak-mod__UI0JSAuFimhsbUSJVKPF {
+	/* Vertically truncate long pipeline names.
+       https://stackoverflow.com/a/7033508 */
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+}
+
+.streak-mod__tzs7pxYpY8i0VxJAra1g {
+	background-color: var(--streak-black-surface);
+	border-radius: 4px;
+	margin: 0 8px 16px;
+	max-width: 360px;
+	padding: 12px 8px 20px;
+	overflow: hidden;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/2440.7c7e9fbda99238f416f3.css.map*/

@@ -1,0 +1,118 @@
+.streak-mod__l0pTlnNjDEm3weynSFMw {
+	margin-left: -8px;
+
+	/* margin-right being one pixel less makes
+	   the dropdown drift to the right as chips are added. */
+	margin-right: -6px;
+}
+
+.streak-mod__l0pTlnNjDEm3weynSFMw:focus {
+		background-color: var(--streak-black-hover);
+		border-radius: 4px;
+		border-style: none;
+		outline-style: none;
+	}
+
+.streak-mod__l0pTlnNjDEm3weynSFMw:focus-within {
+		border-radius: 4px;
+
+		box-shadow:
+			0 4px 5px rgb(0 0 0/12%),
+			0 1px 10px rgb(0 0 0/12%),
+			0 2px 4px rgb(0 0 0/20%);
+	}
+
+.streak-mod__l0pTlnNjDEm3weynSFMw .streak-mod___bTBAt0uqXLlvR5qZex4 {
+		align-items: center;
+		border-radius: 4px;
+		border-style: none;
+		box-sizing: border-box;
+		display: flex;
+	}
+
+.streak-mod__l0pTlnNjDEm3weynSFMw .streak-mod___bTBAt0uqXLlvR5qZex4:hover {
+			background-color: var(--streak-black-hover);
+		}
+
+.streak-mod__mSeeHdBue10kkM_WKgo1,
+.streak-mod__K6sATDBJYaAF_d320BgY {
+	/*
+	   Slightly nudging these two elements to the left because the
+       multi avatar component has a bigger width than most other elements
+       in sidebar.
+    */
+	margin-left: -4px;
+}
+
+.streak-mod__mSeeHdBue10kkM_WKgo1 {
+	font-size: var(--streak-text-size-14);
+}
+
+.streak-mod__l0pTlnNjDEm3weynSFMw .streak-mod__D0kbPPi1aevbZ00RZHkg {
+	color: var(--streak-black-disabled);
+}
+
+.streak-mod__rnDmFnvBODmTBi1uC444 {
+	margin: 0 var(--spacingS);
+	font-size: var(--streak-text-size-14);
+	height: 20px;
+	line-height: 20px;
+	color: var(--streak-black-secondary);
+}
+
+.streak-mod__HeDSJgspDcm5NrsbbQ2w {
+	position: relative;
+	display: flex;
+	flex: 1;
+	min-width: 1px;
+	height: 100%;
+	align-items: center;
+	border-radius: inherit;
+}
+
+.streak-mod__tHNoZCQnxbglMJtXki5X {
+	flex: 1;
+	overflow-x: auto;
+	margin: 0;
+	padding: 0;
+	border-radius: inherit;
+	display: flex;
+
+	column-gap: 8px;
+
+	scrollbar-width: none;
+}
+
+.streak-mod__tHNoZCQnxbglMJtXki5X::-webkit-scrollbar {
+		display: none;
+	}
+
+/* Firefox, for stories */
+
+.streak-mod__tHNoZCQnxbglMJtXki5X > button {
+		flex: none; /* to disable ellipsis on buttons */
+	}
+
+.streak-mod___r4EOd2o38KoyhAI5jsa,
+.streak-mod__kJJIA415YicaKbBYEMK4 {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 10px;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+	z-index: 1;
+}
+
+.streak-mod___r4EOd2o38KoyhAI5jsa {
+	left: 0;
+	box-shadow: inset 10px 0 10px -14px var(--streak-black-shadow);
+}
+
+.streak-mod__kJJIA415YicaKbBYEMK4 {
+	right: 0;
+	box-shadow: inset -10px 0 10px -13px var(--streak-black-shadow);
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/2947.e233be0e46f6193d5229.css.map*/

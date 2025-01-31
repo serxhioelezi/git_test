@@ -1,0 +1,22 @@
+[CLIENT] 0x460001f
+  [RES_NAME] google-chrome
+  [RES_CLASS] Google-chrome
+  [WM_NAME] Email settings - Google Chrome
+  [GEOMETRY] (-5,20,1930,959)
+  [GEOMETRY-MAXIMIZED] (10,35,945,929)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10300
+[CLIENT] 0x5400003
+  [CLIENT_ID] 27bc8e728-ebbe-4058-b0ad-543d1448efbe
+  [CLIENT_LEADER] 0x5400001
+  [WINDOW_ROLE] xfce4-terminal-1738278210-3083175815
+  [RES_NAME] xfce4-terminal
+  [RES_CLASS] Xfce4-terminal
+  [WM_NAME] Terminal - serxhio@Xubuntuu: ~
+  [WM_COMMAND] (1) "xfce4-terminal"
+  [GEOMETRY] (1298,328,577,387)
+  [GEOMETRY-MAXIMIZED] (1298,328,577,387)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10000

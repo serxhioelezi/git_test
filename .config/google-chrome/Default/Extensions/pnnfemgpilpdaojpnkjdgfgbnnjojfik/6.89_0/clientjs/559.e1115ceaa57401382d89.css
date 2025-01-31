@@ -1,0 +1,63 @@
+:root {
+	--streak-gmail-toggle-button-border: rgb(116 119 117);
+	--streak-gmail-toggle-button-background: rgb(68 71 70 / 8%);
+	--streak-gmail-toggle-button-background-active: rgb(211 227 253);
+}
+
+.streak-mod__KHTlRL4BDWHALW2vWKA7 {
+	display: flex;
+	background-color: var(--streak-solid-white);
+	text-wrap: nowrap;
+	box-sizing: border-box;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C:first-child {
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C:last-child {
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C {
+	cursor: pointer;
+	flex: 1;
+	text-align: center;
+	padding: 4px 16px;
+	color: var(--streak-gmail-muted-button-icon-color);
+	box-sizing: border-box;
+	border: 1px solid var(--streak-gmail-toggle-button-border);
+	border-radius: 0;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C:hover {
+	background-color: var(--streak-gmail-toggle-button-background);
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C:not(:last-child) {
+	border-right-width: 0;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C.streak-mod__R_4t2mLQUpzdHeiUR_zn {
+	background-color: var(--streak-gmail-toggle-button-background-active);
+	border-color: var(--streak-gmail-toggle-button-background-active);
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C.streak-mod__R_4t2mLQUpzdHeiUR_zn + .streak-mod__Ho4TxDXTpeBaFMQLIZ4C {
+	border-left-width: 0;
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C:first-child.streak-mod__R_4t2mLQUpzdHeiUR_zn {
+	border-right-color: var(--streak-gmail-toggle-button-border);
+}
+
+.streak-mod__Ho4TxDXTpeBaFMQLIZ4C:last-child.streak-mod__R_4t2mLQUpzdHeiUR_zn {
+	border-left-color: var(--streak-gmail-toggle-button-border);
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/559.e1115ceaa57401382d89.css.map*/

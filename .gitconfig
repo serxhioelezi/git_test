@@ -1,0 +1,9 @@
+[user]
+	name = serxhioelezi
+	email = serxhioelezi6@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[core]
+	excludesfile = /home/serxhio/.gitignore_global

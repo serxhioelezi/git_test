@@ -1,0 +1,33 @@
+.streak-mod__yODZv4nBLHb5vgFvo24i {
+	height: 100%;
+	margin-left: 4px;
+
+	display: flex;
+	align-items: center;
+}
+
+.streak-mod__UTSbzRpqx0GtzMHIYLGd {
+	max-width: 204px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 4px;
+}
+
+.streak-mod__gEF_oc2V5bREOuYVMmCh {
+	box-sizing: border-box;
+	height: 100%;
+
+	background-color: var(--streak-solid-white);
+	color: var(--streak-solid-black-secondary);
+	padding: 0 3px;
+
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+	border-radius: 0px 4px 4px 0px;
+
+	display: flex;
+	align-items: center;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/8520.5410f1d666b7050b8731.css.map*/

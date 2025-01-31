@@ -1,0 +1,38 @@
+/* TODO: Overriding StreakButton's styles to make this button look like the mocks is
+    probably more effort than it's worth. Consider using a regular <button> and reusing
+    styles where appropriate. */
+.streak-mod__JDQOTfntcBjrFvSulili .streak__button.streak__button {
+	border-color: var(--streak-black-divider);
+	border-width: 1px;
+	color: var(--streak-black-secondary);
+	display: block;
+	flex-direction: column;
+	font-size: 11px;
+	font-weight: 300;
+	height: 84px;
+	line-height: normal;
+	padding: 5px;
+	white-space: normal;
+	width: 84px;
+}
+
+.streak-mod__JDQOTfntcBjrFvSulili .streak__button.streak__button:hover,
+.streak-mod__JDQOTfntcBjrFvSulili.streak-mod__FIUoRQSraFTUaafsFXCz .streak__button.streak__button {
+	background-color: var(--streak-primary-hover);
+	border-color: var(--streak-primary);
+	color: var(--streak-primary);
+}
+
+.streak-mod__JDQOTfntcBjrFvSulili .streak-mod__UI0JSAuFimhsbUSJVKPF {
+	/* Vertically truncate long pipeline names.
+       https://stackoverflow.com/a/7033508 */
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/6381.f8f7fd7c4830ec76bcc2.css.map*/

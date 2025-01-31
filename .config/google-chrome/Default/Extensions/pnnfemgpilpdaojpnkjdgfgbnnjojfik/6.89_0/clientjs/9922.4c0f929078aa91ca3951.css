@@ -1,0 +1,88 @@
+.streak-mod__UTv5qj7LA98hUzEiSFar {
+	position: absolute;
+	inset: 0;
+	opacity: 0.5;
+	display: flex;
+	padding-right: 20px;
+	flex-direction: column;
+}
+
+.streak-mod__w_S314Q15gcVgNr0Lr6c {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Google Sans';
+	font-size: 14px;
+}
+
+.streak-mod__lMU9Pu8EblrAn9xulHJ0 {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	bottom: 20px;
+	width: 200px;
+	pointer-events: none;
+	flex-direction: column;
+}
+
+.streak-mod__gdycQha_HYkhXF3AHlMI {
+	flex: 1;
+	display: flex;
+	overflow: auto;
+}
+
+.streak-mod__l3TozNOjGIzrFqe6VB2G {
+	position: relative;
+	flex: 1;
+}
+
+.streak-mod__j7oy4xfLnK6yHwveIwFq {
+	display: flex;
+	height: 20px;
+}
+
+.streak-mod__Odp5cNqHu0jD2EwV6RqC {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+
+	display: flex;
+}
+
+.streak-mod__yPmzfCovOMvLXoQKm5sg {
+	display: flex;
+
+	align-items: center;
+
+	border: 1px solid var(--streak-solid-black-divider);
+
+	overflow: hidden;
+	padding: 0 4px;
+
+	border-right: none;
+}
+
+.streak-mod__uYo7Q7DSvWz8bmpbAFug {
+	font-family: 'Material Symbols Outlined';
+	font-size: 20px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	color: var(--gmail-icon-color);
+}
+
+.streak-mod__HSYQ4BSoOZcGYzZx6Tx3 {
+	color: var(--streak-solid-black-secondary);
+}
+
+.inboxsdk__gmail_dark_body_theme .streak-mod__uYo7Q7DSvWz8bmpbAFug {
+	color: var(--streak-solid-white);
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/9922.4c0f929078aa91ca3951.css.map*/

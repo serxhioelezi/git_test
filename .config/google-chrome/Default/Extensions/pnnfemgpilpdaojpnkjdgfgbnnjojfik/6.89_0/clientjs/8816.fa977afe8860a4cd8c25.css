@@ -1,0 +1,114 @@
+.streak-mod__Ane15rtYFCT9Nhck1Wtk {
+	color: var(--streak-black-primary);
+	margin-bottom: 16px;
+	padding: 0 var(--sidebar-padding);
+}
+
+.streak__footer-item--updates {
+	position: relative;
+}
+
+.streak-mod__RPoQrTmgvOe23oQmmRfh {
+	align-items: center;
+	border-radius: 2em;
+	display: flex;
+	font-size: var(--streak-text-size-14);
+	margin: 0 -8px;
+	padding: 0 12px;
+}
+
+.streak-mod__RPoQrTmgvOe23oQmmRfh:hover {
+	background-color: var(--streak-black-hover);
+	cursor: pointer;
+}
+
+.streak-mod__zn7SjyVjF0WFYLYoY_ZO {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow-x: hidden;
+	/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+	overflow-y: auto;
+}
+
+.streak-mod__VzAXpi2a_cxfG0VxGEXA {
+	margin-top: 16px;
+}
+
+.streak-mod__QM9oWu0hNTnP9Q5q5GCO {
+	column-gap: 8px;
+	cursor: pointer;
+	display: grid;
+	grid-template:
+		'a b' min-content
+		'a c' min-content
+		'a .' min-content
+		/ min-content minmax(0, 1fr);
+	padding: 12px var(--sidebar-padding);
+	background-color: white;
+	transition: background-color 70ms ease-in-out;
+}
+
+.streak-mod__QM9oWu0hNTnP9Q5q5GCO:hover {
+		background-color: var(--streak-app-primary-hover);
+	}
+
+.streak-mod__Lc0yCpTonLruKLktTqFa {
+	grid-area: a;
+	width: 95px;
+	height: 53.44px;
+	position: relative;
+}
+
+.streak-mod__Lc0yCpTonLruKLktTqFa > img {
+		width: 100%;
+		height: 100%;
+		border-radius: 4px;
+	}
+
+.streak-mod__JWNr8uRrQqMlKjdcpP0x {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.streak-mod__cuKoWSSdAQpeVweL_sVM {
+	grid-area: b;
+}
+
+.streak-mod__XAT7gDpSEh1NnrQiJ4iD {
+	grid-area: c;
+}
+
+.streak-mod__xzn55AExurciqYcurK5c {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) min-content;
+	padding: 0 var(--sidebar-padding);
+}
+
+.streak-mod__QimUzYEL7ZCFKbP4kKBw {
+	background-color: rgb(255 247 230);
+	color: var(--streak-color-gradient-flat);
+	font-size: var(--streak-text-size-12);
+	line-height: 1.5;
+	padding: 0 4px;
+}
+
+.streak-mod__RD1W5FLInKCsGaR_2HNf {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 8px;
+	display: grid;
+	grid-auto-flow: row;
+}
+
+.streak-mod__q998AakWsGEpSIjx_xCK {
+	margin-left: 2px;
+	margin-bottom: 32px;
+}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/8816.fa977afe8860a4cd8c25.css.map*/

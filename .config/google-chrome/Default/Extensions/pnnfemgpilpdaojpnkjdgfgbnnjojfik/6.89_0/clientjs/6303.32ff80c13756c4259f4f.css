@@ -1,0 +1,42 @@
+.streak-mod__fDZ4OeTfyTXrkUEwIP1r {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.streak-mod__phFo5MCWnTzVJWKl5WD1 {
+	background-color: var(--streak-gmail-label-background);
+	border-radius: 50%;
+	color: var(--streak-gmail-label-text);
+	font-size: 0.85em;
+	height: 100%;
+	width: 20px;
+	position: relative;
+}
+
+.streak-mod__phFo5MCWnTzVJWKl5WD1::after {
+		align-self: center;
+		display: flex;
+		inset: 0;
+		justify-content: center;
+		position: absolute;
+	}
+
+.inboxsdk__thread_row_icon_wrapper:has(> .streak-mod__fDZ4OeTfyTXrkUEwIP1r) {
+		width: 8px;
+		z-index: 0;
+	}
+
+.inboxsdk__thread_row_icon_wrapper:has(> .streak-mod__fDZ4OeTfyTXrkUEwIP1r):hover {
+			z-index: 1;
+		}
+
+.inboxsdk__thread_row_icon_wrapper:has(> .streak-mod__fDZ4OeTfyTXrkUEwIP1r.streak-mod__hax9wj_gY4qNwja_84hQ) {
+		width: unset;
+	}
+
+.inboxsdk__thread_row_icon_wrapper:has(> .streak-mod__phFo5MCWnTzVJWKl5WD1) {
+		z-index: 0;
+	}
+
+
+/*# sourceMappingURL=https://storage.googleapis.com/streak-extension-sourcemaps/clientjs/6303.32ff80c13756c4259f4f.css.map*/
